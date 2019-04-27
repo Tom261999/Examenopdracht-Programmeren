@@ -151,10 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BaseFlow_Tom_Stoops.h" />
+    <ClInclude Include="Grid_Tom_Stoops.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaseFlow_Tom_Stoops.cpp" />
     <ClCompile Include="Examenopdracht_Tom_Stoops.cpp" />
+    <ClCompile Include="Grid_Tom_Stoops.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
