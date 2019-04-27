@@ -1,7 +1,7 @@
 #pragma once
-class BaseFlow
-{
+class BaseFlow {
 public:
+	// Constructor & Destructor
 	BaseFlow();
 	~BaseFlow();
 };

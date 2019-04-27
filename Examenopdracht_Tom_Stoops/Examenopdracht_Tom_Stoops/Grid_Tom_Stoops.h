@@ -1,21 +1,26 @@
 #pragma once
-class Grid
-{
+#include <iostream>
+#include <vector>
+#include "BaseFlow_Tom_Stoops.h"
+
+class Grid : BaseFlow { // Inherit BaseFlow?
 public:
-	Grid(float xmin, float xmax, float ymin, float ymax, int xstep, int ystep);
+	//Constructor & Destructor
+	Grid(double xmin, double xmax, double ymin, double ymax, int xstep, int ystep);
 	~Grid();
 
 private:
 	// Input check functies
-	float checkStep(float step);
-	bool checkRange(float min, float max);
+	double checkStep(double step);
 
 	// Gridparameters
-	int xstep;
+	int xstep; // geeft de resolutie van het grid
 	int ystep;
-	float xmin;
-	float xmax;
-	float ymin;
-	float ymax;
-};
+	double xmin; // geeft de minimale en maximale waarden voor x en y richtingen
+	double xmax;
+	double ymin;
+	double ymax;
 
+	// Grid
+	std::vector<BaseFlow*> grid; // gebruik hier xstep*ystep als lengte vd totale vector; positie (x,y) is dan gegeven door de .at(i) met "i = (y-1)*xstep+x"
+};

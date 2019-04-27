@@ -1,36 +1,39 @@
 #include "pch.h"
 #include "Grid_Tom_Stoops.h"
-#include <iostream>
 
 
 // Constructor & Destructor
 
-Grid::Grid(float xmin_in, float xmax_in, float ymin_in, float ymax_in, int xstep_in, int ystep_in) {
+Grid::Grid(double xmin_in, double xmax_in, double ymin_in, double ymax_in, int xstep_in, int ystep_in) {
 	std::cout << "<<Grid Constructor>>" << std::endl;
 
 	// Input checks
 	xstep = checkStep(xstep_in);
 	ystep = checkStep(ystep_in);
 
-	if (checkRange(xmin_in, xmax_in) == true) {
+	if (xmin_in < xmax_in) {
 		xmin = xmin_in;
 		xmax = xmax_in;
 	}
 	else {
+		std::cerr << "<Error>: Ongeldige x-range ingegeven." << std::endl;
 		exit(1);
 	};
 
-	if (checkRange(ymin_in, ymax_in) == true) {
+	if (ymin_in < ymax_in) {
 		ymin = ymin_in;
 		ymax = ymax_in;
 	}
 	else {
+		std::cerr << "<Error>: Ongeldige y-range ingegeven." << std::endl;
 		exit(1);
-	}
+	};
 
 	// Toon gridparameters op console
 	std::cout << "Grid aangemaakt met volgende parameters: \n\tx-range: " << xmin << " tot " << xmax << "\n\ty-range: " << ymin << " tot " << ymax << "\n\tx-stappen: " << xstep << "\n\tystappen: " << ystep << std::endl;
 	
+	// Initialiseer het grid
+	grid.reserve(xstep*ystep); // We reserveren xstep*ystep aantal plaatsen in het geheugen voor het grid van BaseFlow pointers
 
 };
 
@@ -39,9 +42,9 @@ Grid::~Grid() {
 };
 
 
-// Input check functies
+// Input check functie
 
-float Grid::checkStep(float step) {
+double Grid::checkStep(double step) {
 	if (step == 0)
 	{
 		std::cerr << "<Error>: Gridstap kan niet 0 zijn." << std::endl;
@@ -53,15 +56,5 @@ float Grid::checkStep(float step) {
 	}
 	else {
 		return step;
-	}
-};
-
-bool Grid::checkRange(float min, float max) {
-	if (min < max) {
-		return true;
-	}
-	else {
-		std::cerr << "<Error>: Ongeldige range ingegeven." << std::endl;
-		return false;
 	}
 };
