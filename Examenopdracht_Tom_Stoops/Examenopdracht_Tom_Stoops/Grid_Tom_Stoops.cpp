@@ -30,7 +30,7 @@ Grid::Grid(double xmin_in, double xmax_in, double ymin_in, double ymax_in, int x
 	};
 
 	// Toon gridparameters op console
-	std::cout << "Grid aangemaakt met volgende parameters: \n\tx-range: " << xmin << " tot " << xmax << "\n\ty-range: " << ymin << " tot " << ymax << "\n\tx-stappen: " << xstep << "\n\tystappen: " << ystep << std::endl;
+	std::cout << "Grid aangemaakt met volgende parameters: \n\tx-range: " << xmin << " tot " << xmax << "\n\ty-range: " << ymin << " tot " << ymax << "\n\tx-stappen: " << xstep << "\n\ty-stappen: " << ystep << std::endl;
 	
 	// Initialiseer het grid
 	grid.reserve(xstep*ystep); // We reserveren xstep*ystep aantal plaatsen in het geheugen voor het grid van BaseFlow pointers

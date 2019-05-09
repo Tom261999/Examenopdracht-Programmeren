@@ -3,11 +3,14 @@
 #include <vector>
 #include "BaseFlow_Tom_Stoops.h"
 
-class Grid : BaseFlow { // Inherit BaseFlow?
+class Grid {
 public:
-	//Constructor & Destructor
+	// Constructor & Destructor
 	Grid(double xmin, double xmax, double ymin, double ymax, int xstep, int ystep);
 	~Grid();
+
+	void addBaseflow(BaseFlow*);
+
 
 private:
 	// Input check functies
