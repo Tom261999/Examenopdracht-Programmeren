@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
 #include <iostream>
+#define _USE_MATH_DEFINES // Nodig om M_PI te gebruiken in de afgeleide klassen (is minder werk als ik het gewoon hier include)
+#include <math.h>
 
 class BaseFlow {
 public:
@@ -16,6 +18,6 @@ public:
 protected:
 	double xval;
 	double yval;
-	double sterkte;
+	double sterkte; // Q, \Gamma, ...
 
 };

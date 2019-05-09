@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Grid_Tom_Stoops.h"
+#include <fstream>
 
 
 // Constructor & Destructor
@@ -41,7 +42,7 @@ Grid::~Grid() {
 
 // Input check functie
 
-double Grid::checkStep(double step) {
+int Grid::checkStep(int step) {
 	if (step == 0)
 	{
 		std::cerr << "<Error>: Gridstap kan niet 0 zijn." << std::endl;
@@ -63,6 +64,14 @@ void Grid::addBaseflow(BaseFlow* bfPtr) { // bfPtr is een pointer naar een funda
 	fundSoln.push_back(bfPtr);
 };
 
-void writeOutput(std::string filename, std::string type) {
-	std::cerr << " ///To be added/// " << std::endl;
+void Grid::writeStream(std::string filename) {
+
+};
+
+void Grid::writePotential(std::string filename) {
+
+};
+
+void Grid::writeVelocity(std::string filename) {
+
 };

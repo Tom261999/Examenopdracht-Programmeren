@@ -11,12 +11,16 @@ public:
 	~Grid();
 
 	void addBaseflow(BaseFlow* bfPtr);
-	void writeOutput(std::string filename, std::string type); // type = "velocity","potential", ...
+
+	// Naar bestand wegschrijven
+	void writeStream(std::string filename);
+	void writePotential(std::string filename);
+	void writeVelocity(std::string filename);
 
 
 private:
 	// Input check functies
-	double checkStep(double step);
+	int checkStep(int step);
 
 	// Gridparameters
 	int xstep; // geeft de resolutie van het grid
