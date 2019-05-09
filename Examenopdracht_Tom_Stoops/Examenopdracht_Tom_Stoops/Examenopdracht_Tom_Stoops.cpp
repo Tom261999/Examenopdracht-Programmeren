@@ -8,4 +8,4 @@ int main()
 	std::cout << "Hello world!" << std::endl;
 
 	Grid mytestgrid(0, 1, 2, 3, 100, 150);
-}
+};

@@ -24,6 +24,9 @@
     <ClInclude Include="BaseFlow_Tom_Stoops.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source_Tom_Stoops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -36,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BaseFlow_Tom_Stoops.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_Tom_Stoops.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

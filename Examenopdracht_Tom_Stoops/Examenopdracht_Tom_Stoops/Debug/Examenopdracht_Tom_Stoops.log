@@ -1,7 +1,3 @@
-﻿  BaseFlow_Tom_Stoops.cpp
-  Examenopdracht_Tom_Stoops.cpp
-  Grid_Tom_Stoops.cpp
-c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\grid_tom_stoops.cpp(11): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\grid_tom_stoops.cpp(12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-  Generating Code...
-  Examenopdracht_Tom_Stoops.vcxproj -> C:\Users\Tomst\Desktop\Examen Opdracht Programmeren\Examenopdracht-Programmeren\Examenopdracht_Tom_Stoops\Debug\Examenopdracht_Tom_Stoops.exe
+﻿  Source_Tom_Stoops.cpp
+c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\source_tom_stoops.cpp(5): error C2512: 'BaseFlow': no appropriate default constructor available
+  c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\baseflow_tom_stoops.h(5): note: see declaration of 'BaseFlow'
