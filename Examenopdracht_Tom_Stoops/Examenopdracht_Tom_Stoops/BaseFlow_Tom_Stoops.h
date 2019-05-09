@@ -1,8 +1,22 @@
 #pragma once
+#include <vector>
+#include <iostream>
+
 class BaseFlow {
 public:
 	// Constructor & Destructor
-	BaseFlow();
+	BaseFlow(double xval_in, double yval_in, double sterkte_in); // x-, y-waarden, en de sterkte (Q, \Gamma, ...)
 	~BaseFlow();
+
+	// Essentiële functies (pure virtual)
+	virtual double getStreamVal(double xval, double yval) = 0; // = 0 zoadat pure virtual en deze klasse abstract class zijn, geen implementatie nodig in de source file
+	virtual double getPotentialVal(double xval, double yval) = 0;
+	virtual std::vector<double> getVelocityVec(double xval, double yval) = 0;
+
+protected:
+	double xval;
+	double yval;
+	double sterkte;
+
 };
 
