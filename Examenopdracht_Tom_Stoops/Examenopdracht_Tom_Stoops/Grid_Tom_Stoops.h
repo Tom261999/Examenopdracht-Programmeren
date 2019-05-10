@@ -10,12 +10,12 @@ public:
 	Grid(double xmin, double xmax, double ymin, double ymax, int xstep, int ystep);
 	~Grid();
 
-	void addBaseflow(BaseFlow* bfPtr);
+	void addBaseFlow(BaseFlow* bfPtr);
 
 	// Naar bestand wegschrijven
-	void writeStream(std::string filename);
-	void writePotential(std::string filename);
-	void writeVelocity(std::string filename);
+	void writeStream(std::string filename) const;
+	void writePotential(std::string filename) const;
+	void writeVelocity(std::string filename) const;
 
 
 private:
@@ -30,6 +30,8 @@ private:
 	double ymin;
 	double ymax;
 
-	// Grid
+	std::vector<double> xaxis;
+	std::vector<double> yaxis;
+
 	std::vector<BaseFlow*> fundSoln; // bevat de fundamentele oplossingen
 };

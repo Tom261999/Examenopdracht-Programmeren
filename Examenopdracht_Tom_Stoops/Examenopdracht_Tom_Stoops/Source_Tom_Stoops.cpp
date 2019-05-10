@@ -13,15 +13,15 @@ Source::~Source() {
 
 
 // Essentiële functies
-double BaseFlow::getStreamVal(double xval, double yval) {
+double Source::getStreamVal(double xval, double yval) {
 	return sterkte / (2 * M_PI)*atan(yval / xval);
 };
 
-double BaseFlow::getPotentialVal(double xval, double yval) {
+double Source::getPotentialVal(double xval, double yval) {
 	return -sterkte / (2 * M_PI)*log(xval*xval + yval * yval);
 };
 
-std::vector<double> BaseFlow::getVelocityVec(double xval, double yval) {
+std::vector<double> Source::getVelocityVec(double xval, double yval) {
 	std::vector<double> v;
 	v.at(1) = sterkte / (2 * M_PI*(xval*xval + yval * yval))*xval;
 	v.at(2) = sterkte / (2 * M_PI*(xval*xval + yval * yval))*yval;

@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Grid_Tom_Stoops.h"
 #include <fstream>
+#include <iomanip>
 
 
 // Constructor & Destructor
@@ -33,6 +34,14 @@ Grid::Grid(double xmin_in, double xmax_in, double ymin_in, double ymax_in, int x
 	// Toon gridparameters op console
 	std::cout << "Grid aangemaakt met volgende parameters: \n\tx-range: " << xmin << " tot " << xmax << "\n\ty-range: " << ymin << " tot " << ymax << "\n\tx-stappen: " << xstep << "\n\ty-stappen: " << ystep << std::endl;
 
+	// Maak de assen
+	for (int i = 0; i < xstep; i++)	{
+		xaxis.push_back(xmin + i * (xmax - xmin) / xstep);
+	};
+
+	for (int i = 0; i < ystep; i++) {
+		yaxis.push_back(ymin + i * (ymax - ymin) / ystep);
+	};
 };
 
 Grid::~Grid() {
@@ -60,18 +69,44 @@ int Grid::checkStep(int step) {
 
 // Essentiële functies
 
-void Grid::addBaseflow(BaseFlow* bfPtr) { // bfPtr is een pointer naar een fundamentele oplossing van ons systeem
+void Grid::addBaseFlow(BaseFlow* bfPtr) { // bfPtr is een pointer naar een fundamentele oplossing van ons systeem
 	fundSoln.push_back(bfPtr);
 };
 
-void Grid::writeStream(std::string filename) {
+void Grid::writeStream(std::string filename) const {
+	filename += ".txt";
+	std::ofstream File(filename, std::ios::out);
+
+	if (!File) {
+		std::cerr << "<Error>: Outputfile niet gevonden." << std::endl;
+		exit(1);
+	}
+	else {
+		for (int i = 0; i < xstep; i++) {
+			for (int j = 0; j < ystep; j++) {
+
+				double value = 0;
+
+				for (int k = 0; k < fundSoln.size(); k++) {
+					double x = xaxis.at(i);
+					double y = yaxis.at(j);
+					BaseFlow* soln = fundSoln.at(k);
+
+					value += soln->getStreamVal(x, y);
+				}
+
+				File << std::fixed << std::setprecision(6) << value << "\t";
+			}
+
+			File << "\n";
+		}
+	}
+};
+
+void Grid::writePotential(std::string filename) const {
 
 };
 
-void Grid::writePotential(std::string filename) {
-
-};
-
-void Grid::writeVelocity(std::string filename) {
+void Grid::writeVelocity(std::string filename) const {
 
 };
