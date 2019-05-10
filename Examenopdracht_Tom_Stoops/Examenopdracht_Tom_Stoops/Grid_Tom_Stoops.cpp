@@ -71,6 +71,7 @@ int Grid::checkStep(int step) {
 
 void Grid::addBaseFlow(BaseFlow* bfPtr) { // bfPtr is een pointer naar een fundamentele oplossing van ons systeem
 	fundSoln.push_back(bfPtr);
+	std::cout << "vector fundSoln is zo lang: " << fundSoln.size() << std::endl;
 };
 
 void Grid::writeStream(std::string filename) const {
@@ -95,7 +96,12 @@ void Grid::writeStream(std::string filename) const {
 					value += soln->getStreamVal(x, y);
 				}
 
-				File << std::fixed << std::setprecision(6) << value << "\t";
+				if (isnan(value)) {
+					File << "NaN\t";
+				}
+				else {
+					File << std::fixed << std::setprecision(4) << value << "\t";
+				}
 			}
 
 			File << "\n";
@@ -104,9 +110,106 @@ void Grid::writeStream(std::string filename) const {
 };
 
 void Grid::writePotential(std::string filename) const {
+	filename += ".txt";
+	std::ofstream File(filename, std::ios::out);
 
+	if (!File) {
+		std::cerr << "<Error>: Outputfile niet gevonden." << std::endl;
+		exit(1);
+	}
+	else {
+		for (int i = 0; i < xstep; i++) {
+			for (int j = 0; j < ystep; j++) {
+
+				double value = 0;
+
+				for (int k = 0; k < fundSoln.size(); k++) {
+					double x = xaxis.at(i);
+					double y = yaxis.at(j);
+					BaseFlow* soln = fundSoln.at(k);
+
+					value += soln->getPotentialVal(x, y);
+				}
+
+				if (isnan(value)) {
+					File << "NaN\t";
+				}
+				else {
+					File << std::fixed << std::setprecision(4) << value << "\t";
+				}
+			}
+
+			File << "\n";
+		}
+	}
 };
 
 void Grid::writeVelocity(std::string filename) const {
+	// Voor x component
+	std::string xname = filename + "_x.txt";
+	std::ofstream xFile(xname, std::ios::out);
 
+	if (!xFile) {
+		std::cerr << "<Error>: Outputfile niet gevonden." << std::endl;
+		exit(1);
+	}
+	else {
+		for (int i = 0; i < xstep; i++) {
+			for (int j = 0; j < ystep; j++) {
+
+				double value = 0;
+
+				for (int k = 0; k < fundSoln.size(); k++) {
+					double x = xaxis.at(i);
+					double y = yaxis.at(j);
+					BaseFlow* soln = fundSoln.at(k);
+
+					value += soln->getVelocityVec(x, y).at(0);
+				}
+
+				if (isnan(value)) {
+					xFile << "NaN\t";
+				}
+				else {
+					xFile << std::fixed << std::setprecision(4) << value << "\t";
+				}
+			}
+
+			xFile << "\n";
+		}
+	}
+
+	// Voor y component
+	std::string yname = filename + "_y.txt";
+	std::ofstream yFile(yname, std::ios::out);
+
+	if (!yFile) {
+		std::cerr << "<Error>: Outputfile niet gevonden." << std::endl;
+		exit(1);
+	}
+	else {
+		for (int i = 0; i < xstep; i++) {
+			for (int j = 0; j < ystep; j++) {
+
+				double value = 0;
+
+				for (int k = 0; k < fundSoln.size(); k++) {
+					double x = xaxis.at(i);
+					double y = yaxis.at(j);
+					BaseFlow* soln = fundSoln.at(k);
+
+					value += soln->getVelocityVec(x, y).at(1);
+				}
+
+				if (isnan(value)) {
+					yFile << "NaN\t";
+				}
+				else {
+					yFile << std::fixed << std::setprecision(4) << value << "\t";
+				}
+			}
+
+			yFile << "\n";
+		}
+	}
 };

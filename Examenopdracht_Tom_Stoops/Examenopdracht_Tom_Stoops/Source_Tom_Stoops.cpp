@@ -13,18 +13,22 @@ Source::~Source() {
 
 
 // Essentiële functies
-double Source::getStreamVal(double xval, double yval) {
-	return sterkte / (2 * M_PI)*atan(yval / xval);
+double Source::getStreamVal(double x, double y) {
+	double output = sterkte / (2 * M_PI) * atan((y - yval) / (x - xval));
+	return output;
 };
 
-double Source::getPotentialVal(double xval, double yval) {
-	return -sterkte / (2 * M_PI)*log(xval*xval + yval * yval);
+double Source::getPotentialVal(double x, double y) {
+	double output = -sterkte / (2 * M_PI) * log((x - xval) * (x - xval) + (y - yval) * (y - yval));
+	return output;
 };
 
-std::vector<double> Source::getVelocityVec(double xval, double yval) {
+std::vector<double> Source::getVelocityVec(double x, double y) {
 	std::vector<double> v;
-	v.at(1) = sterkte / (2 * M_PI*(xval*xval + yval * yval))*xval;
-	v.at(2) = sterkte / (2 * M_PI*(xval*xval + yval * yval))*yval;
+	v.resize(2, 0);
+
+	v.at(0) = sterkte * (x - xval) / (2 * M_PI*((x - xval) * (x - xval) + (y - yval) * (y - yval)));
+	v.at(1) = sterkte * (y - yval) / (2 * M_PI*((x - xval) * (x - xval) + (y - yval) * (y - yval)));
 
 	return v;
 };
