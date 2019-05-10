@@ -8,6 +8,7 @@ class BaseFlow {
 public:
 	// Constructor & Destructor
 	BaseFlow(double xval_in, double yval_in, double sterkte_in); // x-, y-waarden, en de sterkte (Q, \Gamma, ...)
+	BaseFlow(double alpha_in, double sterkte_in);
 	~BaseFlow();
 
 	// Essentiële functies (pure virtual)
@@ -18,6 +19,7 @@ public:
 protected:
 	double xval;
 	double yval;
-	double sterkte; // Q, \Gamma, ...
+	double sterkte; // Q, \Gamma, U_\infty, ...
+	double alpha; // hoek met x-as voor uniform flow
 
 };
