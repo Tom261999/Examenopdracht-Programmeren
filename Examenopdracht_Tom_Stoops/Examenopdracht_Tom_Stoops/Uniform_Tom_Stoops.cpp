@@ -4,12 +4,12 @@
 
 Uniform::Uniform(double alpha_in, double sterkte_in) : BaseFlow(alpha_in, sterkte_in) {
 	std::cout << "<<Uniform Constructor>>" << std::endl;
-}
+};
 
 
 Uniform::~Uniform() {
 	std::cout << "<<Uniform Destructor>>" << std::endl;
-}
+};
 
 double Uniform::getStreamVal(double x, double y) {
 	double output = sterkte * (y*cos(alpha) + x * sin(alpha));

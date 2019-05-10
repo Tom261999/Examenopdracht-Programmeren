@@ -71,7 +71,6 @@ int Grid::checkStep(int step) {
 
 void Grid::addBaseFlow(BaseFlow* bfPtr) { // bfPtr is een pointer naar een fundamentele oplossing van ons systeem
 	fundSoln.push_back(bfPtr);
-	std::cout << "vector fundSoln is zo lang: " << fundSoln.size() << std::endl;
 };
 
 void Grid::writeStream(std::string filename) const {
