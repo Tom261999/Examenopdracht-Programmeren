@@ -5,6 +5,7 @@
 #include "Uniform_Tom_Stoops.h"
 #include "Vortex_Tom_Stoops.h"
 #include "Doublet_Tom_Stoops.h"
+#include "VortexSheet_Tom_Stoops.h"
 
 int main()
 {
@@ -22,23 +23,27 @@ int main()
 	mytestgrid.addBaseFlow(SinkPtr);
 	*/
 
-	
+	/*
 	Uniform myuniform(0, 1);
 	Uniform* uniPtr = &myuniform;
 	mytestgrid.addBaseFlow(uniPtr);
-	
+	*/
 
-	
+	/*
 	Vortex myvortex(0, 0, 5);
 	Vortex* vorPtr = &myvortex;
 	mytestgrid.addBaseFlow(vorPtr);
-	
+	*/
 
 	
 	Doublet mydoublet(0, 0, 1);
 	Doublet* douPtr = &mydoublet;
 	mytestgrid.addBaseFlow(douPtr);
 	
+
+	VortexSheet myvsheet(0, 1, "numeriek");
+	VortexSheet* vsPtr = &myvsheet;
+	mytestgrid.addBaseFlow(vsPtr);
 
 
 	mytestgrid.writeStream("stream");

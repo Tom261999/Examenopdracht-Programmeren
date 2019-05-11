@@ -15,6 +15,9 @@ BaseFlow::BaseFlow(double alpha_in, double sterkte_in) {
 	sterkte = sterkte_in;
 };
 
+BaseFlow::BaseFlow(double xval_in, double yval_in, double sterkte_in, int N) {
+	std::cout << "<<BaseFlow Constructor (VortexSheet Numeriek)>>" << std::endl;
+};
 
 BaseFlow::~BaseFlow() {
 	std::cout << "<<BaseFlow Destructor>>" << std::endl;
