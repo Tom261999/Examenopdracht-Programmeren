@@ -152,14 +152,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BaseFlow_Tom_Stoops.h" />
+    <ClInclude Include="Doublet_Tom_Stoops.h" />
     <ClInclude Include="Grid_Tom_Stoops.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Source_Tom_Stoops.h" />
     <ClInclude Include="Uniform_Tom_Stoops.h" />
+    <ClInclude Include="VortexSheet_Tom_Stoops.h" />
     <ClInclude Include="Vortex_Tom_Stoops.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseFlow_Tom_Stoops.cpp" />
+    <ClCompile Include="Doublet_Tom_Stoops.cpp" />
     <ClCompile Include="Examenopdracht_Tom_Stoops.cpp" />
     <ClCompile Include="Grid_Tom_Stoops.cpp" />
     <ClCompile Include="pch.cpp">
@@ -170,6 +173,7 @@
     </ClCompile>
     <ClCompile Include="Source_Tom_Stoops.cpp" />
     <ClCompile Include="Uniform_Tom_Stoops.cpp" />
+    <ClCompile Include="VortexSheet_Tom_Stoops.cpp" />
     <ClCompile Include="Vortex_Tom_Stoops.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

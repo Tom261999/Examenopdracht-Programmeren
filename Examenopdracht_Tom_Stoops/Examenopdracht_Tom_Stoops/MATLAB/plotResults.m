@@ -40,11 +40,11 @@ contour(X,Y,S,20) %last argument: #contour levels
 % Draw vector field
 quiver(X,Y,vx,vy,2); %last argument: scale factor arrows
 
-% Draw points and ellipse
-plot(-1.49,0,'r.','MarkerSize',20)
-plot(1.49,0,'r.','MarkerSize',20)
-plot(-1,0,'b.','MarkerSize',20)
-plot(1,0,'b.','MarkerSize',20)
-[elX,elY] = calculateEllipse(0,0,1.49,0.905,0);
-plot(elX,elY,'r-.','LineWidth',1.5)
+% % % % % % Draw points and ellipse
+% % % % % plot(-1.49,0,'r.','MarkerSize',20)
+% % % % % plot(1.49,0,'r.','MarkerSize',20)
+% % % % % plot(-1,0,'b.','MarkerSize',20)
+% % % % % plot(1,0,'b.','MarkerSize',20)
+% % % % % [elX,elY] = calculateEllipse(0,0,1.49,0.905,0);
+% % % % % plot(elX,elY,'r-.','LineWidth',1.5)
 

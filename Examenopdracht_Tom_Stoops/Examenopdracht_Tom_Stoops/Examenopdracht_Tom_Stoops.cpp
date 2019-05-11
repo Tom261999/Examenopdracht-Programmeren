@@ -4,6 +4,7 @@
 #include "Source_Tom_Stoops.h"
 #include "Uniform_Tom_Stoops.h"
 #include "Vortex_Tom_Stoops.h"
+#include "Doublet_Tom_Stoops.h"
 
 int main()
 {
@@ -22,14 +23,22 @@ int main()
 	*/
 
 	/*
-	Uniform myuniform(3.14 / 4, 1);
+	Uniform myuniform(0, 1);
 	Uniform* uniPtr = &myuniform;
 	mytestgrid.addBaseFlow(uniPtr);
 	*/
 
+	/*
 	Vortex myvortex(0, 0, 1);
 	Vortex* vorPtr = &myvortex;
 	mytestgrid.addBaseFlow(vorPtr);
+	*/
+
+	/*
+	Doublet mydoublet(0, 0, 1);
+	Doublet* douPtr = &mydoublet;
+	mytestgrid.addBaseFlow(douPtr);
+	*/
 
 
 	mytestgrid.writeStream("stream");
