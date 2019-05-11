@@ -22,23 +22,23 @@ int main()
 	mytestgrid.addBaseFlow(SinkPtr);
 	*/
 
-	/*
+	
 	Uniform myuniform(0, 1);
 	Uniform* uniPtr = &myuniform;
 	mytestgrid.addBaseFlow(uniPtr);
-	*/
+	
 
-	/*
-	Vortex myvortex(0, 0, 1);
+	
+	Vortex myvortex(0, 0, 5);
 	Vortex* vorPtr = &myvortex;
 	mytestgrid.addBaseFlow(vorPtr);
-	*/
+	
 
-	/*
+	
 	Doublet mydoublet(0, 0, 1);
 	Doublet* douPtr = &mydoublet;
 	mytestgrid.addBaseFlow(douPtr);
-	*/
+	
 
 
 	mytestgrid.writeStream("stream");
