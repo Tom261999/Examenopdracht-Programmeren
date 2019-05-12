@@ -9,7 +9,7 @@
 
 int main()
 {
-	Grid mytestgrid(-2, 2, -2, 2, 100, 100);
+	Grid mytestgrid(-2, 2, -1, 1, 200, 100);
 
 	/*
 	Source mysourcetest(1, 0, 1);
@@ -35,15 +35,22 @@ int main()
 	mytestgrid.addBaseFlow(vorPtr);
 	*/
 
-	
+	/*
 	Doublet mydoublet(0, 0, 1);
 	Doublet* douPtr = &mydoublet;
 	mytestgrid.addBaseFlow(douPtr);
-	
+	*/
 
-	VortexSheet myvsheet(0, 1, "numeriek");
-	VortexSheet* vsPtr = &myvsheet;
+	/*
+	VortexSheet myvs(-1, 1, 0, 1, 4);
+	VortexSheet* vsPtr = &myvs;
 	mytestgrid.addBaseFlow(vsPtr);
+	*/
+
+	
+	VortexSheet myvs2(1, 0.5);
+	VortexSheet* vsPtr2 = &myvs2;
+	mytestgrid.addBaseFlow(vsPtr2);
 
 
 	mytestgrid.writeStream("stream");

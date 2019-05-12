@@ -82,8 +82,8 @@ void Grid::writeStream(std::string filename) const {
 		exit(1);
 	}
 	else {
-		for (int i = 0; i < xstep; i++) {
-			for (int j = 0; j < ystep; j++) {
+		for (int j = 0; j < ystep; j++) {
+			for (int i = 0; i < xstep; i++) {
 
 				double value = 0;
 
@@ -117,8 +117,8 @@ void Grid::writePotential(std::string filename) const {
 		exit(1);
 	}
 	else {
-		for (int i = 0; i < xstep; i++) {
-			for (int j = 0; j < ystep; j++) {
+		for (int j = 0; j < ystep; j++) {
+			for (int i = 0; i < xstep; i++) {
 
 				double value = 0;
 
@@ -153,8 +153,8 @@ void Grid::writeVelocity(std::string filename) const {
 		exit(1);
 	}
 	else {
-		for (int i = 0; i < xstep; i++) {
-			for (int j = 0; j < ystep; j++) {
+		for (int j = 0; j < ystep; j++) {
+			for (int i = 0; i < xstep; i++) {
 
 				double value = 0;
 
@@ -187,8 +187,8 @@ void Grid::writeVelocity(std::string filename) const {
 		exit(1);
 	}
 	else {
-		for (int i = 0; i < xstep; i++) {
-			for (int j = 0; j < ystep; j++) {
+		for (int j = 0; j < ystep; j++) {
+			for (int i = 0; i < xstep; i++) {
 
 				double value = 0;
 

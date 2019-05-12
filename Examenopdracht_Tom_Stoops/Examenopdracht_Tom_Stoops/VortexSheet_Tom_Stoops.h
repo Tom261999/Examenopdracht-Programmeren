@@ -3,8 +3,7 @@
 
 class VortexSheet :	public BaseFlow {
 public:
-	VortexSheet(double xval_in, double yval_in, double sterkte_in, int N_in); // Numeriek
-	VortexSheet(double xval_in, double yval_in, double sterkte_in, double a_in); // Analytisch
+	VortexSheet(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in); // Numeriek
 	~VortexSheet();
 
 	// Essentiële functies
@@ -13,8 +12,8 @@ public:
 	std::vector<double> getVelocityVec(double xval, double yval);
 
 private:
-	int N;
 	double a;
 	std::string type;
+	std::vector<double> xloc; // x-waarden van de locaties van de vortices
 };
 

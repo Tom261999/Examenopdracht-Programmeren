@@ -4,8 +4,8 @@
 minX=-2;
 maxX=2;
 
-minY=-2;
-maxY=2;
+minY=-1;
+maxY=1;
 
 %% Import data
 % replace \t by space delimiter
@@ -19,7 +19,7 @@ vy = importdata('vectors_Y.txt','\t');
 %% Make grid
 % here [Y,X] because output had loop over x then y 
 [nY,nX] = size(S);
-[Y,X] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
+[X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 %% Draw results
 figure
@@ -35,7 +35,7 @@ shading flat;
 colorbar;
 
 % Draw streamlines ( does not work together with contourf )
-contour(X,Y,S,20) %last argument: #contour levels
+contour(X,Y,S,50) %last argument: #contour levels
 
 % Draw vector field
 quiver(X,Y,vx,vy,2); %last argument: scale factor arrows
