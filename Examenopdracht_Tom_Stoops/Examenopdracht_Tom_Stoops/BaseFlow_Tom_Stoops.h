@@ -8,9 +8,8 @@ class BaseFlow {
 public:
 	// Constructor & Destructor
 	BaseFlow(double xval_in, double yval_in, double sterkte_in); // x-, y-waarden, en de sterkte (Q, \Gamma, ...)
-	BaseFlow(double alpha_in, double sterkte_in); // Uniform
+	BaseFlow(double sterkte_in); // Uniform & analytische vortexsheet
 	BaseFlow(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in); // VortexSheet numeriek -> neemt de x waarden van de uiterste twee vortices (op lijn y = yval_in)
-//	BaseFlow(double xval_in, double yval_in, double sterkte_in, double a); // VortexSheet analytisch
 	~BaseFlow();
 
 	// Essentiële functies (pure virtual)

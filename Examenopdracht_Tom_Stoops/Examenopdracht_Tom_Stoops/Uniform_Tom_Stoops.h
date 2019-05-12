@@ -9,5 +9,8 @@ public:
 	double getStreamVal(double xval, double yval);
 	double getPotentialVal(double xval, double yval);
 	std::vector<double> getVelocityVec(double xval, double yval);
+
+private:
+	double alpha;
 };
 

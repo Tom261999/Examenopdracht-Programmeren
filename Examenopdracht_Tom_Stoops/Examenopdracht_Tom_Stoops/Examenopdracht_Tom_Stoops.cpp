@@ -24,7 +24,7 @@ int main()
 	*/
 
 	/*
-	Uniform myuniform(0, 1);
+	Uniform myuniform(0.5, 1);
 	Uniform* uniPtr = &myuniform;
 	mytestgrid.addBaseFlow(uniPtr);
 	*/
@@ -51,7 +51,7 @@ int main()
 	VortexSheet myvs2(1, 0.5);
 	VortexSheet* vsPtr2 = &myvs2;
 	mytestgrid.addBaseFlow(vsPtr2);
-
+	
 
 	mytestgrid.writeStream("stream");
 	mytestgrid.writePotential("pressure");

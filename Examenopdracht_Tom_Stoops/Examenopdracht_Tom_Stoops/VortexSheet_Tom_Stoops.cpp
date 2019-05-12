@@ -62,11 +62,11 @@ VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, dou
 	}
 };
 
-VortexSheet::Vortexsheet(double sterkte_in, double a_in, std::string type_in) {
-
-};
-
-
+VortexSheet::VortexSheet(double sterkte_in, double a_in) : BaseFlow(sterkte_in) {
+	std::cout << "<<VortexSheet Constructor (Analytisch)>>" << std::endl;
+	type = "analytisch";
+	a = a_in; // nog een check voor a!
+}; 
 
 VortexSheet::~VortexSheet() {
 	std::cout << "<<VortexSheet Deconstructor>>" << std::endl;
@@ -82,8 +82,8 @@ double VortexSheet::getStreamVal(double x, double y) {
 			output += sterkte / (4 * M_PI) * log((x - xloc.at(i)) * (x - xloc.at(i)) + (y - yval) * (y - yval));
 		}
 	}
-	else if (type == "anaytisch") {
-		output = 0;
+	else if (type == "analytisch") {
+		output = sterkte / (4 * M_PI) * log(cosh((2 * M_PI*y / a)) - cos(2 * M_PI*x / a));
 	}
 	else {
 		std::cerr << "<Error>: Onverwacht type" << std::endl;
@@ -100,8 +100,7 @@ double VortexSheet::getPotentialVal(double x, double y) {
 		}
 	}
 	else if (type == "analytisch") {
-		output = 0;
-		std::cout << "<Warning>: Geen uitdrukking gekend voor potentiaal voor analytische vortexsheet. Alle waarden zijn 0." << std::endl;
+		output = 0; // geen uitdrukking gegeven!
 	}
 	else {
 		std::cerr << "<Error>: Onverwacht type" << std::endl;

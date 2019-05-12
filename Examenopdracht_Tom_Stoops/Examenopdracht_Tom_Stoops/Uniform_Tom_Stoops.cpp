@@ -2,7 +2,7 @@
 #include "Uniform_Tom_Stoops.h"
 
 
-Uniform::Uniform(double alpha_in, double sterkte_in) : BaseFlow(alpha_in, sterkte_in) {
+Uniform::Uniform(double alpha_in, double sterkte_in) : BaseFlow(sterkte_in), alpha(alpha_in) {
 	std::cout << "<<Uniform Constructor>>" << std::endl;
 };
 
