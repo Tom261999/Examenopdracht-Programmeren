@@ -38,7 +38,8 @@ colorbar;
 contour(X,Y,S,50) %last argument: #contour levels
 
 % Draw vector field
-quiver(X,Y,vx,vy,2); %last argument: scale factor arrows
+%quiver(X,Y,vx,vy,2); %last argument: scale factor arrows
+streamslice(X,Y,vx,vy,2)
 
 % % % % % % Draw points and ellipse
 % % % % % plot(-1.49,0,'r.','MarkerSize',20)

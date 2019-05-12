@@ -12,7 +12,7 @@ Uniform::~Uniform() {
 };
 
 double Uniform::getStreamVal(double x, double y) {
-	double output = sterkte * (y*cos(alpha) + x * sin(alpha));
+	double output = sterkte * (y * cos(alpha) + x * sin(alpha));
 	return output;
 };
 

@@ -1,58 +1,36 @@
 #include "pch.h"
 #include "VortexSheet_Tom_Stoops.h"
-/*
-/////////////////////////////////////////////////////////////////// NOPE CONSTRUCTOR MAKEN VOOR ANALYTISCH EN VOOR NUMERIEK -> DUBBELE OVERLOAD
-VortexSheet::VortexSheet(double yval_in, int N_in, std::string type_in) : BaseFlow::BaseFlow(yval_in, N_in) {
-	std::cout << "<<VortexSheet Constructor>>" << std::endl;
 
-	// Check N waarde
-	if (N_in == 0) {
-		std::cerr << "<Error>: Waarde van N kan niet 0 zijn!" << std::endl;
-		exit(1);
-	}
-	else if (N_in < 0) {
-		std::cerr << "<Warning>: Waarde van N kan niet negatief zijn, we werken verder met de absolute waarde." << std::endl;
-		N = abs(N_in);
-	}
-	else {
-		N = N_in;
-	}
-
-	// Splits analytisch/numeriek
-	if (type_in == "Analytisch" || type_in == "analytisch" || type_in == "A" || type_in == "a") {
-		std::cout << "Analytische oplossing" << std::endl;
-		type = type_in;
-	}
-	else if (type_in == "Numeriek" || type_in == "numeriek" || type_in == "N" || type_in == "n") {
-		std::cout << "Numerieke oplossing" << std::endl;
-		type = type_in;
-	}
-	else {
-		std::cerr << "<Error>: Ongeldig type ingegeven!" << std::endl;
-		exit(1);
-	}
-};
-*/
 
 // Numerieke constructor
-VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in) : BaseFlow(xval_1_in, xval_2_in, yval_in, sterkte_in, N_in) {
+VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in) : BaseFlow(xval_1_in, yval_in, sterkte_in) {
 	type = "numeriek";
 
 	// Check N
-	if (N < 0) {
+	if (N_in < 0) {
 		std::cerr << "<Warning>: N kan niet negatief zijn, we werken verder met absolute waarde van input." << std::endl;
 		N = abs(N_in);
 	}
-	else if (N == 1) {
+	else if (N_in == 1) {
 		std::cerr << "<Error>: N moet ten minste 2 zijn, voor een enkele vortex gebruik klasse Vortex!" << std::endl;
 		exit(1);
 	}
-	else if (N == 0) {
+	else if (N_in == 0) {
 		std::cerr << "<Error>: N kan niet 0 zijn!" << std::endl;
 		exit(1);
 	}
 	else {
 		N = N_in;
+	}
+
+
+
+	if (xval2 == xval) {
+		std::cerr << "<Error>: Ongeldige x-waarde voor de laatste vortex ingegeven!" << std::endl;
+		exit(1);
+	}
+	else {
+		xval2 = xval_2_in;
 	}
 
 	a = (xval2 - xval) / (N-1);
@@ -65,7 +43,18 @@ VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, dou
 VortexSheet::VortexSheet(double sterkte_in, double a_in) : BaseFlow(sterkte_in) {
 	std::cout << "<<VortexSheet Constructor (Analytisch)>>" << std::endl;
 	type = "analytisch";
-	a = a_in; // nog een check voor a!
+
+	if (a_in < 0) {
+		std::cerr << "<Warning>: a moet positief zijn, wer werken verder met de absolute waarde." << std::endl;
+		a = abs(a_in);
+	}
+	else if (a_in == 0) {
+		std::cerr << "<Error>: a kan niet 0 zijn!" << std::endl;
+		exit(1);
+	}
+	else {
+		a = a_in;
+	}
 }; 
 
 VortexSheet::~VortexSheet() {
@@ -100,7 +89,7 @@ double VortexSheet::getPotentialVal(double x, double y) {
 		}
 	}
 	else if (type == "analytisch") {
-		output = 0; // geen uitdrukking gegeven!
+		output = nan(0); // geen uitdrukking gegeven!
 	}
 	else {
 		std::cerr << "<Error>: Onverwacht type" << std::endl;

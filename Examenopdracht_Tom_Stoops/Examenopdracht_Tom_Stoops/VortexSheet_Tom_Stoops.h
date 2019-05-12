@@ -13,7 +13,9 @@ public:
 	std::vector<double> getVelocityVec(double xval, double yval);
 
 private:
+	int N;
 	double a;
+	double xval2;
 	std::string type;
 	std::vector<double> xloc; // x-waarden van de locaties van de vortices
 };
