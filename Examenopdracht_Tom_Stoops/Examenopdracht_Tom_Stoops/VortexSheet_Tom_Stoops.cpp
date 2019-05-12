@@ -3,8 +3,8 @@
 
 
 // Numerieke constructor
-VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in) : BaseFlow(xval_1_in, yval_in, sterkte_in) {
-	type = "numeriek";
+VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in) : BaseFlow(xval_1_in, yval_in, sterkte_in), type("numeriek") {
+	std::cout << "<<VortexSheet Constructor (Numeriek)>>" << std::endl;
 
 	// Check N
 	if (N_in < 0) {
@@ -23,8 +23,6 @@ VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, dou
 		N = N_in;
 	}
 
-
-
 	if (xval2 == xval) {
 		std::cerr << "<Error>: Ongeldige x-waarde voor de laatste vortex ingegeven!" << std::endl;
 		exit(1);
@@ -35,14 +33,14 @@ VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, dou
 
 	a = (xval2 - xval) / (N-1);
 	xloc.resize(N, 0);
+
 	for (int i = 0; i < N; i++) {
 		xloc.at(i) = xval + (i * a);
 	}
 };
 
-VortexSheet::VortexSheet(double sterkte_in, double a_in) : BaseFlow(sterkte_in) {
+VortexSheet::VortexSheet(double sterkte_in, double a_in) : BaseFlow(sterkte_in), type("analytisch") {
 	std::cout << "<<VortexSheet Constructor (Analytisch)>>" << std::endl;
-	type = "analytisch";
 
 	if (a_in < 0) {
 		std::cerr << "<Warning>: a moet positief zijn, wer werken verder met de absolute waarde." << std::endl;
@@ -64,7 +62,7 @@ VortexSheet::~VortexSheet() {
 
 // Essentiële functies
 
-double VortexSheet::getStreamVal(double x, double y) {
+double VortexSheet::getStreamVal(double x, double y) const {
 	double output = 0;
 	if (type == "numeriek") {		
 		for (int i = 0; i < N; i++) {
@@ -81,7 +79,7 @@ double VortexSheet::getStreamVal(double x, double y) {
 	return output;
 }
 
-double VortexSheet::getPotentialVal(double x, double y) {
+double VortexSheet::getPotentialVal(double x, double y) const {
 	double output = 0;
 	if (type == "numeriek") {
 		for (int i = 0; i < N; i++) {
@@ -98,7 +96,7 @@ double VortexSheet::getPotentialVal(double x, double y) {
 	return output;
 };
 
-std::vector<double> VortexSheet::getVelocityVec(double x, double y) {
+std::vector<double> VortexSheet::getVelocityVec(double x, double y) const {
 	std::vector<double> v;
 	v.resize(2, 0);
 

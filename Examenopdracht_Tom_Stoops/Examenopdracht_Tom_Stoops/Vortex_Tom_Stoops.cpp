@@ -11,17 +11,17 @@ Vortex::~Vortex() {
 	std::cout << "<<Vortex Destructor>>" << std::endl;
 };
 
-double Vortex::getStreamVal(double x, double y) {
+double Vortex::getStreamVal(double x, double y) const {
 	double output = sterkte / (4 * M_PI) * log((x - xval) * (x - xval) + (y - yval) * (y - yval));
 	return output;
 };
 
-double Vortex::getPotentialVal(double x, double y) {
+double Vortex::getPotentialVal(double x, double y) const {
 	double output = -sterkte / (2 * M_PI) * atan((y - yval) / (x - xval));
 	return output;
 };
 
-std::vector<double> Vortex::getVelocityVec(double x, double y) {
+std::vector<double> Vortex::getVelocityVec(double x, double y) const {
 	std::vector<double> v;
 	v.resize(2, 0);
 

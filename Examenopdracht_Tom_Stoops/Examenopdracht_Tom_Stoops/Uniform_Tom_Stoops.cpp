@@ -11,17 +11,17 @@ Uniform::~Uniform() {
 	std::cout << "<<Uniform Destructor>>" << std::endl;
 };
 
-double Uniform::getStreamVal(double x, double y) {
+double Uniform::getStreamVal(double x, double y) const {
 	double output = sterkte * (y * cos(alpha) + x * sin(alpha));
 	return output;
 };
 
-double Uniform::getPotentialVal(double x, double y) {
+double Uniform::getPotentialVal(double x, double y) const {
 	double output = sterkte * x * y * sin(alpha) * cos(alpha);
 	return output;
 };
 
-std::vector<double> Uniform::getVelocityVec(double x, double y) {
+std::vector<double> Uniform::getVelocityVec(double x, double y) const {
 	std::vector<double> v;
 	v.resize(2, 0);
 

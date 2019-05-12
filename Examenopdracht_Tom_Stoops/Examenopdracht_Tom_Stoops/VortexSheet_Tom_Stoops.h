@@ -8,15 +8,15 @@ public:
 	~VortexSheet();
 
 	// Essentiële functies
-	double getStreamVal(double xval, double yval);
-	double getPotentialVal(double xval, double yval);
-	std::vector<double> getVelocityVec(double xval, double yval);
+	double getStreamVal(double xval, double yval) const;
+	double getPotentialVal(double xval, double yval) const;
+	std::vector<double> getVelocityVec(double xval, double yval) const;
 
 private:
 	int N;
 	double a;
 	double xval2;
-	std::string type;
+	const std::string type;
 	std::vector<double> xloc; // x-waarden van de locaties van de vortices
 };
 

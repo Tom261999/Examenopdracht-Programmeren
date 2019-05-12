@@ -9,9 +9,10 @@
 
 int main()
 {
+	
 	Grid mytestgrid(-2, 2, -1, 1, 200, 100);
 
-	
+	/*
 	Source mysourcetest(1, 0, 1);
 	Source* myPtrsource = &mysourcetest;
 	mytestgrid.addBaseFlow(myPtrsource);
@@ -21,16 +22,16 @@ int main()
 	Source mysource2(-1, 0, -1);
 	Source* SinkPtr = &mysource2;
 	mytestgrid.addBaseFlow(SinkPtr);
-	
+	*/
 
 	
-	Uniform myuniform(0.5, 1);
+	Uniform myuniform(0, 3);
 	Uniform* uniPtr = &myuniform;
 	mytestgrid.addBaseFlow(uniPtr);
 	
 
 	
-	Vortex myvortex(0, 0, 5);
+	Vortex myvortex(0, 0, 1);
 	Vortex* vorPtr = &myvortex;
 	mytestgrid.addBaseFlow(vorPtr);
 	
@@ -41,7 +42,7 @@ int main()
 	mytestgrid.addBaseFlow(douPtr);
 	
 
-	
+	/*
 	//Numerieke vortexsheet
 	VortexSheet myvs(1, -1, 0, 1, 4);
 	VortexSheet* vsPtr = &myvs;
@@ -53,11 +54,13 @@ int main()
 	VortexSheet myvs2(1, 0.5);
 	VortexSheet* vsPtr2 = &myvs2;
 	mytestgrid.addBaseFlow(vsPtr2);
+	*/
 	
 
 	mytestgrid.writeStream("stream");
 	mytestgrid.writePotential("pressure");
 	mytestgrid.writeVelocity("vectors");
+	
 
 	return 0;
 };

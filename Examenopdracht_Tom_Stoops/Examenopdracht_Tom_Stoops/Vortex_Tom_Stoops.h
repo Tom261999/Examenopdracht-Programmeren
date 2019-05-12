@@ -6,8 +6,8 @@ public:
 	~Vortex();
 
 	// Essentiële functies
-	double getStreamVal(double xval, double yval);
-	double getPotentialVal(double xval, double yval);
-	std::vector<double> getVelocityVec(double xval, double yval);
+	double getStreamVal(double xval, double yval) const;
+	double getPotentialVal(double xval, double yval) const;
+	std::vector<double> getVelocityVec(double xval, double yval) const;
 };
 

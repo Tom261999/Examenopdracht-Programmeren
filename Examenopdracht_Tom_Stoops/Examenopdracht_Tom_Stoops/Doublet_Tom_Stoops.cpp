@@ -12,17 +12,17 @@ Doublet::~Doublet() {
 };
 
 // Essentiële functies
-double Doublet::getStreamVal(double x, double y) {
+double Doublet::getStreamVal(double x, double y) const {
 	double output = -sterkte / (2 * M_PI) * (y - yval) / ((x - xval)*(x - xval) + (y - yval)*(y - yval));
 	return output;
 };
 
-double Doublet::getPotentialVal(double x, double y) {
+double Doublet::getPotentialVal(double x, double y) const {
 	double output = -sterkte / (2 * M_PI) * (x - xval) / ((x - xval)*(x - xval) + (y - yval)*(y - yval));
 	return output;
 };
 
-std::vector<double> Doublet::getVelocityVec(double x, double y) {
+std::vector<double> Doublet::getVelocityVec(double x, double y) const {
 	std::vector<double> v;
 	v.resize(2, 0);
 

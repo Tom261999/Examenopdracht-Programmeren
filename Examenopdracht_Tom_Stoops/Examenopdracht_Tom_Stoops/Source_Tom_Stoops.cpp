@@ -13,17 +13,17 @@ Source::~Source() {
 
 
 // Essentiële functies
-double Source::getStreamVal(double x, double y) {
+double Source::getStreamVal(double x, double y) const {
 	double output = sterkte / (2 * M_PI) * atan((y - yval) / (x - xval));
 	return output;
 };
 
-double Source::getPotentialVal(double x, double y) {
+double Source::getPotentialVal(double x, double y) const {
 	double output = -sterkte / (2 * M_PI) * log((x - xval) * (x - xval) + (y - yval) * (y - yval));
 	return output;
 };
 
-std::vector<double> Source::getVelocityVec(double x, double y) {
+std::vector<double> Source::getVelocityVec(double x, double y) const {
 	std::vector<double> v;
 	v.resize(2, 0);
 
