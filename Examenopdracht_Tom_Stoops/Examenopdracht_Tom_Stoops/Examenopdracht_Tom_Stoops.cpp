@@ -58,4 +58,6 @@ int main()
 	mytestgrid.writeStream("stream");
 	mytestgrid.writePotential("pressure");
 	mytestgrid.writeVelocity("vectors");
+
+	return 0;
 };
