@@ -73,7 +73,7 @@ double VortexSheet::getStreamVal(double x, double y) const {
 		output = sterkte / (4 * M_PI) * log(cosh((2 * M_PI*y / a)) - cos(2 * M_PI*x / a));
 	}
 	else {
-		std::cerr << "<Error>: Onverwacht type" << std::endl;
+		std::cerr << "<Error>: Onverwacht type!" << std::endl;
 		exit(1);
 	}
 	return output;
@@ -87,10 +87,10 @@ double VortexSheet::getPotentialVal(double x, double y) const {
 		}
 	}
 	else if (type == "analytisch") {
-		output = nan(0); // geen uitdrukking gegeven!
+		output = nan(0); // Uitdrukking niet gegeven, geeft NaN terug.
 	}
 	else {
-		std::cerr << "<Error>: Onverwacht type" << std::endl;
+		std::cerr << "<Error>: Onverwacht type!" << std::endl;
 		exit(1);
 	}
 	return output;
@@ -107,11 +107,11 @@ std::vector<double> VortexSheet::getVelocityVec(double x, double y) const {
 		}
 	}
 	else if (type == "analytisch") {
-		v.at(0) = sterkte / (2 * a) * sinh((2 * M_PI*y) / a) / (cosh((2 * M_PI*y) / a) - cos((2 * M_PI*x) / a));
-		v.at(1) = -sterkte / (2 * a) * sin((2 * M_PI*x) / a) / (cosh((2 * M_PI*y) / a) - cos((2 * M_PI*x) / a));
+		v.at(0) = sterkte / (2 * a) * sinh((2 * M_PI * y) / a) / (cosh((2 * M_PI * y) / a) - cos((2 * M_PI * x) / a));
+		v.at(1) = -sterkte / (2 * a) * sin((2 * M_PI * x) / a) / (cosh((2 * M_PI * y) / a) - cos((2 * M_PI * x) / a));
 	}
 	else {
-		std::cerr << "<Error>: Onverwacht type" << std::endl;
+		std::cerr << "<Error>: Onverwacht type!" << std::endl;
 		exit(1);
 	}
 
