@@ -11,7 +11,9 @@
 int main()
 {
 
-	Opdracht_1();
+	//Opdracht_1();
+	//Opdracht_2();
+	Opdracht_3();
 
 
 
