@@ -24,37 +24,37 @@ int main()
 	mytestgrid.addBaseFlow(SinkPtr);
 	*/
 
-	
-	Uniform myuniform(0, 3);
+	/*
+	Uniform myuniform(0, 1.5);
 	Uniform* uniPtr = &myuniform;
 	mytestgrid.addBaseFlow(uniPtr);
-	
+	*/
 
-	
+	/*
 	Vortex myvortex(0, 0, 1);
 	Vortex* vorPtr = &myvortex;
 	mytestgrid.addBaseFlow(vorPtr);
-	
+	*/
 
-	
+	/*
 	Doublet mydoublet(0, 0, 1);
 	Doublet* douPtr = &mydoublet;
 	mytestgrid.addBaseFlow(douPtr);
-	
+	*/
 
 	/*
 	//Numerieke vortexsheet
 	VortexSheet myvs(1, -1, 0, 1, 4);
 	VortexSheet* vsPtr = &myvs;
 	mytestgrid.addBaseFlow(vsPtr);
-	
+	*/
 
 	
 	//Analytisch
-	VortexSheet myvs2(1, 0.5);
+	VortexSheet myvs2(1, 0.25);
 	VortexSheet* vsPtr2 = &myvs2;
 	mytestgrid.addBaseFlow(vsPtr2);
-	*/
+	
 	
 
 	mytestgrid.writeStream("stream");

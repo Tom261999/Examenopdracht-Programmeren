@@ -25,17 +25,17 @@ vy = importdata('vectors_Y.txt','\t');
 figure
 xlabel('x');
 ylabel('y');
-title('Source-sink pair')
+%title('Source-sink pair')
 set(gca,'FontSize',11);
 hold on;
 
 % Draw pressure coefficient
-%contourf(X,Y,P,linspace(-2.0, 1.0, 20))
+contourf(X,Y,P)%,linspace(-2.0, 1.0, 20))
 shading flat;
 colorbar;
 
 % Draw streamlines ( does not work together with contourf )
-%contour(X,Y,S,50) %last argument: #contour levels
+contour(X,Y,S,50) %last argument: #contour levels
 
 % Draw vector field
 %quiver(X,Y,vx,vy,2); %last argument: scale factor arrows

@@ -17,7 +17,7 @@ double Uniform::getStreamVal(double x, double y) const {
 };
 
 double Uniform::getPotentialVal(double x, double y) const {
-	double output = sterkte * x - y * sin(alpha) * cos(alpha);
+	double output = sterkte * (x * cos(alpha) - y * sin(alpha));
 	return output;
 };
 
