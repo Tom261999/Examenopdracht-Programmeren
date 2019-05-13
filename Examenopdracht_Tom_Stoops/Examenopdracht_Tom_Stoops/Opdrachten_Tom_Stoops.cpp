@@ -66,8 +66,4 @@ void Opdracht_1() {
 		opdr1.writeVelocity("O1_D3_" + std::to_string(i+1) + "_vectors");
 		opdr1.clearBaseFlow();
 	}
-
-
-
-
 };

@@ -79,6 +79,7 @@ void Grid::clearBaseFlow() { // maakt de vector met fundamentele oplossingen lee
 
 void Grid::writeStream(std::string filename) const {
 	filename += ".txt";
+	filename = "Output\\" + filename; // zorgt voor een handiger output pad -> zo komen ze niet allemaal naast de header- en source-files!!
 	std::ofstream File(filename, std::ios::out);
 
 	if (!File) {
@@ -114,6 +115,7 @@ void Grid::writeStream(std::string filename) const {
 
 void Grid::writePotential(std::string filename) const {
 	filename += ".txt";
+	filename = "Output\\" + filename;
 	std::ofstream File(filename, std::ios::out);
 
 	if (!File) {
@@ -150,6 +152,7 @@ void Grid::writePotential(std::string filename) const {
 void Grid::writeVelocity(std::string filename) const {
 	// Voor x component
 	std::string xname = filename + "_x.txt";
+	xname = "Output\\" + xname;
 	std::ofstream xFile(xname, std::ios::out);
 
 	if (!xFile) {
@@ -184,6 +187,7 @@ void Grid::writeVelocity(std::string filename) const {
 
 	// Voor y component
 	std::string yname = filename + "_y.txt";
+	yname = "Output\\" + yname;
 	std::ofstream yFile(yname, std::ios::out);
 
 	if (!yFile) {
