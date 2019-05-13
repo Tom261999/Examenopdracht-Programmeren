@@ -11,6 +11,7 @@ public:
 	~Grid();
 
 	void addBaseFlow(BaseFlow* bfPtr);
+	void clearBaseFlow();
 
 	// Naar bestand wegschrijven
 	void writeStream(std::string filename) const;

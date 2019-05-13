@@ -6,19 +6,30 @@
 #include "Vortex_Tom_Stoops.h"
 #include "Doublet_Tom_Stoops.h"
 #include "VortexSheet_Tom_Stoops.h"
+#include "Opdrachten_Tom_Stoops.h"
 
 int main()
 {
-	
+
+	Opdracht_1();
+
+
+
+
+
+	///////////////////////////////////////////////////////////////////////// TEST FUNCTIES
+
+	/*
 	Grid mytestgrid(-2, 2, -1, 1, 200, 100);
+	*/
 
 	/*
 	Source mysourcetest(1, 0, 1);
 	Source* myPtrsource = &mysourcetest;
 	mytestgrid.addBaseFlow(myPtrsource);
-	
+	*/
 
-	
+	/*
 	Source mysource2(-1, 0, -1);
 	Source* SinkPtr = &mysource2;
 	mytestgrid.addBaseFlow(SinkPtr);
@@ -49,18 +60,18 @@ int main()
 	mytestgrid.addBaseFlow(vsPtr);
 	*/
 
-	
+	/*
 	//Analytisch
 	VortexSheet myvs2(1, 0.25);
 	VortexSheet* vsPtr2 = &myvs2;
 	mytestgrid.addBaseFlow(vsPtr2);
+	*/
 	
-	
-
+	/*
 	mytestgrid.writeStream("stream");
 	mytestgrid.writePotential("pressure");
 	mytestgrid.writeVelocity("vectors");
-	
+	*/
 
 	return 0;
 };

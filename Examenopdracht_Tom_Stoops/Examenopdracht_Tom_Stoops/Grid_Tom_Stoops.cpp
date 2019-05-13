@@ -73,6 +73,10 @@ void Grid::addBaseFlow(BaseFlow* bfPtr) { // bfPtr is een pointer naar een funda
 	fundSoln.push_back(bfPtr);
 };
 
+void Grid::clearBaseFlow() { // maakt de vector met fundamentele oplossingen leeg
+	fundSoln.clear();
+};
+
 void Grid::writeStream(std::string filename) const {
 	filename += ".txt";
 	std::ofstream File(filename, std::ios::out);
