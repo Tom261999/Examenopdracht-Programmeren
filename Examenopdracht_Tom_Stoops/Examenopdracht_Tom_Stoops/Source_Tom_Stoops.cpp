@@ -19,7 +19,7 @@ double Source::getStreamVal(double x, double y) const {
 };
 
 double Source::getPotentialVal(double x, double y) const {
-	double output = -sterkte / (2 * M_PI) * log((x - xval) * (x - xval) + (y - yval) * (y - yval));
+	double output = sterkte / (2 * M_PI) * log((x - xval) * (x - xval) + (y - yval) * (y - yval));
 	return output;
 };
 

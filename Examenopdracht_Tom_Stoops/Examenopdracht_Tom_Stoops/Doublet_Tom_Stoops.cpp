@@ -18,7 +18,7 @@ double Doublet::getStreamVal(double x, double y) const {
 };
 
 double Doublet::getPotentialVal(double x, double y) const {
-	double output = -sterkte / (2 * M_PI) * (x - xval) / ((x - xval)*(x - xval) + (y - yval)*(y - yval));
+	double output = sterkte / (2 * M_PI) * (x - xval) / ((x - xval)*(x - xval) + (y - yval)*(y - yval));
 	return output;
 };
 

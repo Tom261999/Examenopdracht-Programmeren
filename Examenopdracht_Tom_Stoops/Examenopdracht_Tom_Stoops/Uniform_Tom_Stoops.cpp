@@ -17,7 +17,7 @@ double Uniform::getStreamVal(double x, double y) const {
 };
 
 double Uniform::getPotentialVal(double x, double y) const {
-	double output = sterkte * x * y * sin(alpha) * cos(alpha);
+	double output = sterkte * x - y * sin(alpha) * cos(alpha);
 	return output;
 };
 
@@ -26,7 +26,7 @@ std::vector<double> Uniform::getVelocityVec(double x, double y) const {
 	v.resize(2, 0);
 
 	v.at(0) = sterkte * cos(alpha);
-	v.at(1) = sterkte * sin(alpha);
+	v.at(1) = -sterkte * sin(alpha);
 
 	return v;
 };
