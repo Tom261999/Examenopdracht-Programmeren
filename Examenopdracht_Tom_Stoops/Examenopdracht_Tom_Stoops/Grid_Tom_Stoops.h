@@ -18,9 +18,10 @@ public:
 	void writePotential(std::string filename) const;
 	void writeVelocity(std::string filename) const;
 
+	/*
 	//TIJDELIJK
 	void testOutput();
-
+	*/
 
 private:
 	// Input check functies

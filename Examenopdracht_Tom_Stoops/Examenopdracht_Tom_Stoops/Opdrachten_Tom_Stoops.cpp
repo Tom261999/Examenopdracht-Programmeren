@@ -231,3 +231,40 @@ void Opdracht_5() {
 	opdr5.writeVelocity("O5_D4_vectors");
 };
 
+void Opdracht_6() {
+	std::cout << "\n\n\t====================================" << std::endl;
+	std::cout << "\t|| Opdracht 6: Lift op een Vortex ||" << std::endl;
+	std::cout << "\t====================================" << std::endl;
+	Grid opdr6(-2, 2, -1, 1, 200, 100);
+
+	std::cout << "\n\t--------------------------------------------------------" << std::endl;
+	std::cout << "\t| Opdracht 6: Deel 1: Kappa = U_infty = 1 en Gamma = 2 |" << std::endl;
+	std::cout << "\t--------------------------------------------------------" << std::endl;
+
+	Uniform stroom(0, 1);
+	Doublet bronput(0, 0, 1);
+	Vortex vort(0, 0, 2);
+	opdr6.addBaseFlow(&stroom);
+	opdr6.addBaseFlow(&bronput);
+	opdr6.addBaseFlow(&vort);	
+
+	std::cout << "-- Data wegschrijven met signature: 'O6_D1' --" << std::endl;
+	opdr6.writeStream("O6_D1_stream");
+	opdr6.writePotential("O6_D1_potential");
+	opdr6.writeVelocity("O6_D1_vectors");
+
+	std::cout << "\n\t-------------------------------------------------------------------" << std::endl;
+	std::cout << "\t| Opdracht 6: Deel 2: U_infty = kappa = 1, Gamma 10 * pi > 8 * pi |" << std::endl;
+	std::cout << "\t-------------------------------------------------------------------" << std::endl;
+	opdr6.clearBaseFlow();
+
+	Vortex vort2(0, 0, 10 * M_PI);
+	opdr6.addBaseFlow(&stroom);
+	opdr6.addBaseFlow(&bronput);
+	opdr6.addBaseFlow(&vort2);
+
+	std::cout << "-- Data wegschrijven met signature: 'O6_D2' --" << std::endl;
+	opdr6.writeStream("O6_D2_stream");
+	opdr6.writePotential("O6_D2_potential");
+	opdr6.writeVelocity("O6_D2_vectors");
+};
