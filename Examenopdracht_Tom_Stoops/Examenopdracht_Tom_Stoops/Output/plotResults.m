@@ -1,8 +1,8 @@
 %% Plot stream and vector functions
 
 %% Set variables %%
-minX=-2;
-maxX=2;
+minX=-2.5;
+maxX=2.5;
 
 minY=-1;
 maxY=1;
@@ -35,11 +35,11 @@ shading flat;
 colorbar;
 
 % Draw streamlines ( does not work together with contourf )
-%contour(X,Y,S,50) %last argument: #contour levels
+contour(X,Y,S,50) %last argument: #contour levels
 
 % Draw vector field
 %quiver(X,Y,vx,vy,2); %last argument: scale factor arrows
-streamslice(X,Y,vx,vy,2)
+%streamslice(X,Y,vx,vy,2)
 
 % % % % % % Draw points and ellipse
 % % % % % plot(-1.49,0,'r.','MarkerSize',20)

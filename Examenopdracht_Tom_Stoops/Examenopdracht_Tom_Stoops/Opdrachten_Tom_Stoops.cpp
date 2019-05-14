@@ -67,6 +67,9 @@ void Opdracht_1() {
 		opdr1.writeStream("O1_D3_" + std::to_string(i+1) + "_stream");
 		opdr1.writePotential("O1_D3_" + std::to_string(i+1) + "_potential");
 		opdr1.writeVelocity("O1_D3_" + std::to_string(i+1) + "_vectors");
+
+		doublet_bron.~Source();
+		doublet_put.~Source();
 		opdr1.clearBaseFlow();
 	}
 };
@@ -144,9 +147,87 @@ void Opdracht_3() {
 	opdr3.writeStream("O3_D3_stream");
 	opdr3.writePotential("O3_D3_potential");
 	opdr3.writeVelocity("O3_D3_vectors");
-
-	opdr3.writeStream("stream");
-	opdr3.writePotential("pressure");
-	opdr3.writeVelocity("vectors");
-
 };
+
+void Opdracht_4() {
+	std::cout << "\n\n\t==========================================" << std::endl;
+	std::cout << "\t|| Opdracht 4: Doublet in Uniforme flow ||" << std::endl;
+	std::cout << "\t==========================================" << std::endl;
+	Grid opdr4(-2, 2, -1, 1, 200, 100);
+
+	Doublet bronput(0, 0, 1);
+	Uniform stroom(0, 1);
+	opdr4.addBaseFlow(&bronput);
+	opdr4.addBaseFlow(&stroom);
+
+	std::cout << "-- Data wegschrijven met signature: 'O4' --" << std::endl;
+	opdr4.writeStream("O4_stream");
+	opdr4.writePotential("O4_potential");
+	opdr4.writeVelocity("O4_vectors");
+};
+
+void Opdracht_5() {
+	std::cout << "\n\n\t==========================" << std::endl;
+	std::cout << "\t|| Opdracht 5: Vortices ||" << std::endl;
+	std::cout << "\t==========================" << std::endl;
+	Grid opdr5(-2.5, 2.5, -1, 1, 300, 100);
+
+	std::cout << "\n\t------------------------------" << std::endl;
+	std::cout << "\t| Opdracht 5: Deel 1: Vortex |" << std::endl;
+	std::cout << "\t------------------------------" << std::endl;
+
+	Vortex vort(0, 0, 1);
+	opdr5.addBaseFlow(&vort);
+
+	std::cout << "-- Data wegschrijven met signature: 'O5_D1' --" << std::endl;
+	opdr5.writeStream("O5_D1_stream");
+	opdr5.writePotential("O5_D1_potential");
+	opdr5.writeVelocity("O5_D1_vectors");
+
+	std::cout << "\n\t---------------------------------------------------------" << std::endl;
+	std::cout << "\t| Opdracht 5: Deel 2: Vortex & Sink (op zelfde positie) |" << std::endl;
+	std::cout << "\t---------------------------------------------------------" << std::endl;
+	
+	Source put(0, 0, -1);
+	opdr5.addBaseFlow(&put);
+
+	std::cout << "-- Data wegschrijven met signature: 'O5_D2' --" << std::endl;
+	opdr5.writeStream("O5_D2_stream");
+	opdr5.writePotential("O5_D2_potential");
+	opdr5.writeVelocity("O5_D2_vectors");
+
+	std::cout << "\n\t----------------------------------------------------" << std::endl;
+	std::cout << "\t| Opdracht 5: Deel 3: N Vortices met sterkte Gamma |" << std::endl;
+	std::cout << "\t----------------------------------------------------" << std::endl;
+	opdr5.clearBaseFlow();
+
+	std::cout << "-- We verhogen het aantal vortices tussen x = -2 en x = 2 langs y = 0. --" << std::endl;
+	std::vector<int> N = { 3, 4, 5, 10 };
+
+	std::cout << "-- Data wegschrijven met signature: 'O1_D3_i' waar 'i' de ide iteratie. --" << std::endl;
+	for (int i = 0; i < N.size(); i++) {
+		std::cout << "||Iteratie " << i + 1 << "||" << std::endl;
+		VortexSheet vortsheet(-2, 2, 0, 1, N.at(i));
+		opdr5.addBaseFlow(&vortsheet);
+
+		opdr5.writeStream("O5_D3_" + std::to_string(i + 1) + "_stream");
+		opdr5.writePotential("O5_D3_" + std::to_string(i + 1) + "_potential");
+		opdr5.writeVelocity("O5_D3_" + std::to_string(i + 1) + "_vectors");
+
+		vortsheet.~VortexSheet();
+		opdr5.clearBaseFlow();
+	}
+
+	std::cout << "\n\t------------------------------------------------------------" << std::endl;
+	std::cout << "\t| Opdracht 5: Deel 4: Analytische VortexSheet met a =  0.5 |" << std::endl;
+	std::cout << "\t------------------------------------------------------------" << std::endl;
+
+	VortexSheet vortsheetAnalytisch(1, 0.5);
+	opdr5.addBaseFlow(&vortsheetAnalytisch);
+
+	std::cout << "-- Data wegschrijven met signature: 'O5_D4' --" << std::endl;
+	opdr5.writeStream("O5_D4_stream");
+	opdr5.writePotential("O5_D4_potential");
+	opdr5.writeVelocity("O5_D4_vectors");
+};
+

@@ -220,3 +220,10 @@ void Grid::writeVelocity(std::string filename) const {
 		}
 	}
 };
+
+// TIJDELIJK
+void Grid::testOutput() {
+	writeStream("stream");
+	writePotential("pressure");
+	writeVelocity("vectors");
+};
