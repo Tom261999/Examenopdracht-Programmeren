@@ -10,7 +10,8 @@ public:
 	double getPotentialVal(double xval, double yval) const;
 	std::vector<double> getVelocityVec(double xval, double yval) const;
 
-private:
+	double getSterkte();
+
+protected:
 	const double alpha;
 };
-

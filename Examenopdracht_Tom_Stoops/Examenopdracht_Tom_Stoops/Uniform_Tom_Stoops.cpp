@@ -30,3 +30,7 @@ std::vector<double> Uniform::getVelocityVec(double x, double y) const {
 
 	return v;
 };
+
+double Uniform::getSterkte() {
+	return sterkte;
+};

@@ -221,11 +221,57 @@ void Grid::writeVelocity(std::string filename) const {
 	}
 };
 
-/*
+void Grid::writeCp(std::string filename, Uniform* UniPtr) const {
+	filename += ".txt";
+	filename = "Output\\" + filename; // zorgt voor een handiger output pad -> zo komen ze niet allemaal naast de header- en source-files!!
+	std::ofstream File(filename, std::ios::out);
+
+	if (!File) {
+		std::cerr << "<Error>: Outputfile niet gevonden." << std::endl;
+		exit(1);
+	}
+	else {
+		double sterkte = UniPtr->getSterkte();
+
+		for (int j = 0; j < ystep; j++) {
+			for (int i = 0; i < xstep; i++) {
+
+				double x = xaxis.at(i);
+				double y = yaxis.at(j);
+				double vx = 0;
+				double vy = 0;
+
+				for (int k = 0; k < fundSoln.size(); k++) {
+					BaseFlow* soln = fundSoln.at(k);
+
+					vx += soln->getVelocityVec(x,y).at(0);
+					vy += soln->getVelocityVec(x, y).at(1);
+
+				}
+
+				if (x < 0.01 && y < 0.01 && x>-0.01 && y>-0.01) {
+					vx = nan(0);
+					vy = nan(0);
+				}
+				double Cp = 1 - ((vx * vx + vy * vy) / (sterkte * sterkte));
+
+				if (isnan(Cp)) {
+					File << "NaN\t";
+				}
+				else {
+					File << std::fixed << std::setprecision(4) << Cp << "\t";
+				}
+			}
+
+			File << "\n";
+		}
+	}
+};
+
+
 // TIJDELIJK
 void Grid::testOutput() {
 	writeStream("stream");
 	writePotential("pressure");
 	writeVelocity("vectors");
 };
-*/

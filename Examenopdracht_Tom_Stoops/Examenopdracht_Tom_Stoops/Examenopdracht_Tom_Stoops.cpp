@@ -10,14 +10,32 @@
 
 int main()
 {
-
+	/*
 	Opdracht_1();
 	Opdracht_2();
 	Opdracht_3();
 	Opdracht_4();
 	Opdracht_5();
 	Opdracht_6();
+	*/
 
+	/*Vortex vortex(1, 0, 1);
+	Vortex vortex2(-1, 0, -1);
+	Uniform uniform(3.14 / 2, -4);
+	Grid mygrid(-2, 2, -2, 2, 100, 100);
+	mygrid.addBaseFlow(&vortex);
+	mygrid.addBaseFlow(&vortex2);
+	mygrid.testOutput();*/
+
+	Grid mygrid(-1, 1, -1, 1, 200, 200);
+	Doublet doublet(0, 0, 5);
+	Vortex vort(0, 0, 5);
+	Uniform stroom(0, 5);
+	mygrid.addBaseFlow(&doublet);
+	mygrid.addBaseFlow(&stroom);
+	mygrid.addBaseFlow(&vort);
+	mygrid.writeCp("Cptest", &stroom);
+	mygrid.testOutput();
 
 
 
@@ -53,9 +71,9 @@ int main()
 	*/
 
 	/*
-	Doublet mydoublet(0, 0, 1);
 	Doublet* douPtr = &mydoublet;
 	mytestgrid.addBaseFlow(douPtr);
+	Doublet mydoublet(0, 0, 1);
 	*/
 
 	/*

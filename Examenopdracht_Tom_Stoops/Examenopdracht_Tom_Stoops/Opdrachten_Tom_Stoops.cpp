@@ -24,6 +24,8 @@ void Opdracht_1() {
 	opdr1.addBaseFlow(&bron);
 	opdr1.addBaseFlow(&put);
 
+	opdr1.testOutput();
+
 	std::cout << "-- Data wegschrijven naar bestanden met signature: 'O1_D1' --" << std::endl;
 	opdr1.writeStream("O1_D1_stream");
 	opdr1.writePotential("O1_D1_potential");

@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include "BaseFlow_Tom_Stoops.h"
+#include "Uniform_Tom_Stoops.h"
 
 class Grid {
 public:
@@ -17,11 +18,11 @@ public:
 	void writeStream(std::string filename) const;
 	void writePotential(std::string filename) const;
 	void writeVelocity(std::string filename) const;
-
-	/*
+	void writeCp(std::string filename, Uniform* UniPtr) const;
+	
 	//TIJDELIJK
 	void testOutput();
-	*/
+	
 
 private:
 	// Input check functies
@@ -38,5 +39,6 @@ private:
 	std::vector<double> xaxis;
 	std::vector<double> yaxis;
 
+protected: // protected omdat ik deze nog wil accessen in DrukCoeff
 	std::vector<BaseFlow*> fundSoln; // bevat de fundamentele oplossingen
 };
