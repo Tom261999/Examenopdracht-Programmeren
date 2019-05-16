@@ -78,10 +78,10 @@ void Opdracht_2() {
 	std::cout << "\n\t=========================================" << std::endl;
 	std::cout << "\t|| Opdracht 2: Source in Uniforme flow ||" << std::endl;
 	std::cout << "\t=========================================" << std::endl;
-	Grid opdr2(-2, 2, -1, 1, 200, 100);
+	Grid opdr2(-4, 4, -2, 2, 200, 100);
 
-	Source bron(-1, 0, 1);
-	Uniform stroming(0, 1.5);
+	Source bron(-1, 0, 6);
+	Uniform stroming(0, 1);
 	opdr2.addBaseFlow(&bron);
 	opdr2.addBaseFlow(&stroming);
 

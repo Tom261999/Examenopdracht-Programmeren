@@ -10,10 +10,13 @@
 
 int main() {
 	
+	
 	Opdracht_1();
-
-	/*
+	
+	
 	Opdracht_2();
+	
+	/*
 	Opdracht_3();
 	Opdracht_4();
 	Opdracht_5();
