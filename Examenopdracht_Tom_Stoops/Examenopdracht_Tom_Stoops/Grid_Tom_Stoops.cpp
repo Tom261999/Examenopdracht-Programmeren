@@ -249,10 +249,6 @@ void Grid::writeCp(std::string filename, Uniform* UniPtr) const {
 
 				}
 
-				if (x < 0.01 && y < 0.01 && x>-0.01 && y>-0.01) {
-					vx = nan(0);
-					vy = nan(0);
-				}
 				double Cp = 1 - ((vx * vx + vy * vy) / (sterkte * sterkte));
 
 				if (isnan(Cp)) {
