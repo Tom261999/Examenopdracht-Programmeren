@@ -30,3 +30,18 @@ source = plot(xsource,ysource,'g.','MarkerSize',25)
 stag = plot(xstag,ysource,'k.','MarkerSize',25)
 
 legend([source,stag],'Source','Stagnatiepunt')
+
+% Toon met simulatie aan waar stagnatiepunt is:
+v = (vx.^2+vy.^2).^(1/2);
+figure(2), hold on;
+contourf(X,Y,v,linspace(-1, 10, 50))
+source = plot(xsource,ysource,'m.','MarkerSize',25)
+stag = plot(xstag,ysource,'c.','MarkerSize',25)
+legend([source,stag],'Source','Stagnatiepunt')
+colorbar
+ylabel(colorbar,'Norm van de snelheidsvector')
+set(gca,'FontSize',11)
+xlabel('x-as')
+ylabel('y-as')
+title({'Source in Uniforme stroom:','Norm van Snelheidsvector'})
+daspect([1 1 1])
