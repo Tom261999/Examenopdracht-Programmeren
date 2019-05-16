@@ -1,7 +1,4 @@
-﻿  Grid_Tom_Stoops.cpp
-c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\grid_tom_stoops.cpp(95): warning C4018: '<': signed/unsigned mismatch
-c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\grid_tom_stoops.cpp(131): warning C4018: '<': signed/unsigned mismatch
-c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\grid_tom_stoops.cpp(168): warning C4018: '<': signed/unsigned mismatch
-c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\grid_tom_stoops.cpp(203): warning C4018: '<': signed/unsigned mismatch
-c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\grid_tom_stoops.cpp(244): warning C4018: '<': signed/unsigned mismatch
+﻿  Opdrachten_Tom_Stoops.cpp
+c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\opdrachten_tom_stoops.cpp(59): warning C4018: '<': signed/unsigned mismatch
+c:\users\tomst\desktop\examen opdracht programmeren\examenopdracht-programmeren\examenopdracht_tom_stoops\examenopdracht_tom_stoops\opdrachten_tom_stoops.cpp(209): warning C4018: '<': signed/unsigned mismatch
   Examenopdracht_Tom_Stoops.vcxproj -> C:\Users\Tomst\Desktop\Examen Opdracht Programmeren\Examenopdracht-Programmeren\Examenopdracht_Tom_Stoops\Debug\Examenopdracht_Tom_Stoops.exe

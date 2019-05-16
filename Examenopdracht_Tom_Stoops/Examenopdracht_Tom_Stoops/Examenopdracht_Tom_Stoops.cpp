@@ -8,10 +8,11 @@
 #include "VortexSheet_Tom_Stoops.h"
 #include "Opdrachten_Tom_Stoops.h"
 
-int main()
-{
-	/*
+int main() {
+	
 	Opdracht_1();
+
+	/*
 	Opdracht_2();
 	Opdracht_3();
 	Opdracht_4();
@@ -27,6 +28,7 @@ int main()
 	mygrid.addBaseFlow(&vortex2);
 	mygrid.testOutput();*/
 
+	/*
 	Grid mygrid(-1, 1, -1, 1, 200, 200);
 	Doublet doublet(0, 0, 5);
 	Vortex vort(0, 0, 5);
@@ -36,7 +38,7 @@ int main()
 	mygrid.addBaseFlow(&vort);
 	mygrid.writeCp("Cptest", &stroom);
 	mygrid.testOutput();
-
+	*/
 
 
 

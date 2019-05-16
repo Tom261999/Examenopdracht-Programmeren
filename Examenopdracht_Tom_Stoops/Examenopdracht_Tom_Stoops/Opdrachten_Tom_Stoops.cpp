@@ -24,13 +24,10 @@ void Opdracht_1() {
 	opdr1.addBaseFlow(&bron);
 	opdr1.addBaseFlow(&put);
 
-	opdr1.testOutput();
-
 	std::cout << "-- Data wegschrijven naar bestanden met signature: 'O1_D1' --" << std::endl;
 	opdr1.writeStream("O1_D1_stream");
 	opdr1.writePotential("O1_D1_potential");
 	opdr1.writeVelocity("O1_D1_vectors");
-
 
 	// Deel 2: Q_1 > Q_2
 	std::cout << "\n\t------------------------------------------------------------" << std::endl;
@@ -44,7 +41,7 @@ void Opdracht_1() {
 
 	std::cout << "-- Data wegschrijven met signature: 'O1_D2' --" << std::endl;
 	opdr1.writeStream("O1_D2_stream");
-	opdr1.writePotential("O1_D2_pressure");
+	opdr1.writePotential("O1_D2_potential");
 	opdr1.writeVelocity("O1_D2_vectors");
 
 
@@ -116,6 +113,7 @@ void Opdracht_3() {
 	opdr3.writeStream("O3_D1_stream");
 	opdr3.writePotential("O3_D1_potential");
 	opdr3.writeVelocity("O3_D1_vectors");
+	opdr3.writeCp("O3_drukcoeff", &stroom);
 
 	// Deel 2: Q_1 > Q_2 = U_infty
 	std::cout << "\n\t---------------------------------------------------------------------------------" << std::endl;
@@ -166,6 +164,7 @@ void Opdracht_4() {
 	opdr4.writeStream("O4_stream");
 	opdr4.writePotential("O4_potential");
 	opdr4.writeVelocity("O4_vectors");
+	opdr4.writeCp("O4_drukcoeff", &stroom);
 };
 
 void Opdracht_5() {
