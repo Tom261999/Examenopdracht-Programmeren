@@ -113,7 +113,7 @@ void Opdracht_3() {
 	opdr3.writeStream("O3_D1_stream");
 	opdr3.writePotential("O3_D1_potential");
 	opdr3.writeVelocity("O3_D1_vectors");
-	opdr3.writeCp("O3_drukcoeff", &stroom);
+	opdr3.writeCp("O3_D1_drukcoeff", &stroom);
 
 	// Deel 2: Q_1 > Q_2 = U_infty
 	std::cout << "\n\t---------------------------------------------------------------------------------" << std::endl;
@@ -131,6 +131,7 @@ void Opdracht_3() {
 	opdr3.writePotential("O3_D2_potential");
 	opdr3.writeVelocity("O3_D2_vectors");
 
+	/* // Overbodig!
 	// Deel 3: U_infty = Q_1 > Q_2
 	std::cout << "\n\t---------------------------------------------------------------------------------" << std::endl;
 	std::cout << "\t| Opdracht 3: Deel 3: Source-Sink paar in Uniforme flow met U_infty = Q_1 > Q_2 |" << std::endl;
@@ -147,6 +148,7 @@ void Opdracht_3() {
 	opdr3.writeStream("O3_D3_stream");
 	opdr3.writePotential("O3_D3_potential");
 	opdr3.writeVelocity("O3_D3_vectors");
+	*/
 };
 
 void Opdracht_4() {
