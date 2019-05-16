@@ -27,7 +27,7 @@ legend([source,sink],'Source','Sink')
 set(gca,'FontSize',11)
 xlabel('x-as')
 ylabel('y-as')
-title({'Source-Sink in Uniforme stroom (met U_{\infty} = |Q_1| = |Q_2|) :','Stroomlijnen \psi & Snelheidsvectoren'})
+title({'Source-Sink in Uniforme Stroom (met U_{\infty} = |Q_1| = |Q_2|) :','Stroomlijnen \psi & Snelheidsvectoren'})
 daspect([1 1 1])
 
 % plot: drukcoefficient
@@ -41,7 +41,7 @@ ylabel(colorbar,'Drukcoëfficiënt C_p')
 set(gca,'FontSize',11)
 xlabel('x-as')
 ylabel('y-as')
-title({'Source-Sink in Uniforme stroom (met U_{\infty} = |Q_1| = |Q_2|) :','Drukcoëfficiënt C_p'})
+title({'Source-Sink in Uniforme Stroom (met U_{\infty} = |Q_1| = |Q_2|) :','Drukcoëfficiënt C_p'})
 daspect([1 1 1])
 
 %% Deel 2
@@ -72,6 +72,6 @@ legend([source,sink],'Source','Sink')
 %set(gca,'FontSize',11)
 xlabel('x-as')
 ylabel('y-as')
-title({'Source-Sink in Uniforme stroom (met |Q_1| > |Q_2| = U_\infty):','Stroomlijnen \psi & Snelheidsvectoren'},'FontSize',11)
+title({'Source-Sink in Uniforme Stroom (met |Q_1| > |Q_2| = U_\infty):','Stroomlijnen \psi & Snelheidsvectoren'},'FontSize',11)
 daspect([1 1 1])
  
