@@ -15,7 +15,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(1), hold on;
+figure(1), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels
@@ -45,7 +45,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(2), hold on;
+figure(2), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels
@@ -65,7 +65,7 @@ clear;
 % plots: Q*l = cte
 figure(3);
 
-subplot(4,1,1), hold on;
+subplot(4,1,1), hold on, box on;
     % data import
     vx = importdata('O5_D3_1_vectors_x.txt','\t');
     vy = importdata('O5_D3_1_vectors_y.txt','\t');
@@ -93,7 +93,7 @@ subplot(4,1,1), hold on;
     daspect([1 1 1])
     axis([-2.5 2.5 -1 1])
     
-subplot(4,1,2), hold on;
+subplot(4,1,2), hold on, box on;
     % data import
     vx = importdata('O5_D3_2_vectors_x.txt','\t');
     vy = importdata('O5_D3_2_vectors_y.txt','\t');
@@ -122,7 +122,7 @@ subplot(4,1,2), hold on;
     daspect([1 1 1])
     axis([-2.5 2.5 -1 1])
     
-subplot(4,1,3), hold on;
+subplot(4,1,3), hold on, box on;
     % data import
     vx = importdata('O5_D3_3_vectors_x.txt','\t');
     vy = importdata('O5_D3_3_vectors_y.txt','\t');
@@ -152,7 +152,7 @@ subplot(4,1,3), hold on;
     daspect([1 1 1])
     axis([-2.5 2.5 -1 1])
     
-subplot(4,1,4), hold on;
+subplot(4,1,4), hold on, box on;
     % data import
     vx = importdata('O5_D3_4_vectors_x.txt','\t');
     vy = importdata('O5_D3_4_vectors_y.txt','\t');
@@ -203,7 +203,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(5), hold on;
+figure(4), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels

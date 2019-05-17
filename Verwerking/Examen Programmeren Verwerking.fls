@@ -158,6 +158,14 @@ INPUT Examen Programmeren Verwerking.toc
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 OUTPUT Examen Programmeren Verwerking.toc
 INPUT c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT plots/probleem1_1.eps
+INPUT ./plots/probleem1_1.eps
+INPUT ./plots/probleem1_1.eps
+INPUT ./plots/probleem1_1.eps
+INPUT ./plots/probleem1_1-eps-converted-to.pdf
+INPUT ./plots/probleem1_1-eps-converted-to.pdf
+INPUT ./plots/probleem1_1-eps-converted-to.pdf
+INPUT ./plots/probleem1_1-eps-converted-to.pdf
 INPUT Examen Programmeren Verwerking.aux
 INPUT ./Examen Programmeren Verwerking.out
 INPUT ./Examen Programmeren Verwerking.out

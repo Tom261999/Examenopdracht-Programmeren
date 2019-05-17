@@ -15,7 +15,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(1), hold on;
+figure(1), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels
@@ -31,7 +31,7 @@ axis([-2 2 -1 1])
 
 % moet dit?
 % % % plot: drukcoefficient
-% % figure(2), hold on;
+% % figure(2), hold on, box on;
 % % contourf(X,Y,abs(cp),linspace(-2, 2, 20))
 % % object = plot(0,0,'k.','MarkerSize',25)
 % % legend([object],'Vortex + Doublet')
@@ -58,7 +58,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(3), hold on;
+figure(2), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels

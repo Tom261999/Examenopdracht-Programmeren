@@ -16,7 +16,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(1), hold on;
+figure(1), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels
@@ -31,7 +31,7 @@ title({'Source-Sink in Uniforme Stroom (met U_{\infty} = |Q_1| = |Q_2|) :','Stro
 daspect([1 1 1])
 
 % plot: drukcoefficient
-figure(2), hold on;
+figure(2), hold on, box on;
 contourf(X,Y,cp,linspace(-2, 2, 20))
 source = plot(-1,0,'g.','MarkerSize',25)
 sink = plot(1,0,'r.','MarkerSize',25)
@@ -48,7 +48,7 @@ daspect([1 1 1])
 clear;
 
 % plot
-figure(3), hold on;
+figure(3), hold on, box on;
 
 % data import
 vx = importdata('O3_D2_vectors_x.txt','\t');

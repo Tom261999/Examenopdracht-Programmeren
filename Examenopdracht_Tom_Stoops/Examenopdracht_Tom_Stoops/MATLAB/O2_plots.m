@@ -13,7 +13,7 @@ minY = -2; maxY = 2;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(1), hold on;
+figure(1), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 set(gca,'FontSize',11)
@@ -33,7 +33,7 @@ legend([source,stag],'Source','Stagnatiepunt')
 
 % Toon met simulatie aan waar stagnatiepunt is:
 v = (vx.^2+vy.^2).^(1/2);
-figure(2), hold on;
+figure(2), hold on, box on;
 contourf(X,Y,v,linspace(-1, 10, 50))
 source = plot(xsource,ysource,'m.','MarkerSize',25)
 stag = plot(xstag,ysource,'c.','MarkerSize',25)

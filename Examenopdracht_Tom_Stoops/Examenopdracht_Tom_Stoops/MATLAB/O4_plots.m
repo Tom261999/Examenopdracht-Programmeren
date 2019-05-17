@@ -13,7 +13,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(1), hold on;
+figure(1), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 set(gca,'FontSize',11)

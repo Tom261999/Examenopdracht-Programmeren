@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1558098467 "Examen Programmeren Verwerking.tex" "Examen Programmeren Verwerking.pdf" "Examen Programmeren Verwerking" 1558098468
-  "Examen Programmeren Verwerking.aux" 1558098468 820 cc83c2aab7efdafcc9db48e332114d9e ""
-  "Examen Programmeren Verwerking.out" 1558098468 80 97fc12b4577d3056d0610b7c4642918d ""
-  "Examen Programmeren Verwerking.tex" 1558098465 1807 bccd8f79f2992bbcfba9709c0fe25e73 ""
-  "Examen Programmeren Verwerking.toc" 1558098468 121 68c5d319a3f2fa03a4aeec8e50ca9b08 ""
+["pdflatex"] 1558099973 "Examen Programmeren Verwerking.tex" "Examen Programmeren Verwerking.pdf" "Examen Programmeren Verwerking" 1558099976
+  "Examen Programmeren Verwerking.aux" 1558099976 1054 9921b61741263a8bb85cb1297b8b38fb ""
+  "Examen Programmeren Verwerking.out" 1558099976 80 97fc12b4577d3056d0610b7c4642918d ""
+  "Examen Programmeren Verwerking.tex" 1558099621 2019 9fe9e67e4d9dad7a5893b490d13323b8 ""
+  "Examen Programmeren Verwerking.toc" 1558099976 121 68c5d319a3f2fa03a4aeec8e50ca9b08 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1535052517 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1535052842 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1535052713 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -91,9 +91,10 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1535054513 2913173 d520042e9c053f90675c8d5ad1ce77cd ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535054606 4217229 138cf4754522d2d090039ef3a86d8115 ""
   "c:/texlive/2018/texmf.cnf" 1535054495 673 4ae7b2f49cee444c5343a45b5d0f169c ""
+  "plots/probleem1_1.eps" 1558099803 1652101 0214befb50778f6dcca0358cd4e35711 ""
   (generated)
+  "Examen Programmeren Verwerking.out"
+  "Examen Programmeren Verwerking.pdf"
+  "Examen Programmeren Verwerking.toc"
   "Examen Programmeren Verwerking.log"
   "Examen Programmeren Verwerking.aux"
-  "Examen Programmeren Verwerking.out"
-  "Examen Programmeren Verwerking.toc"
-  "Examen Programmeren Verwerking.pdf"

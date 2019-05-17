@@ -15,7 +15,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(1), hold on;
+figure(1), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels
@@ -30,7 +30,7 @@ title({'Source-Sink (met |Q_1| = |Q_2|):','Stroomlijnen \psi & Snelheidsvectoren
 daspect([1 1 1])% alternatief: set(gca,'DataAspectRatio',[1 1 1])
 
 % plot: equipotentiaallijnen
-figure(2), hold on;
+figure(2), hold on, box on;
 contourf(X,Y,P,20)
 colorbar;
 
@@ -48,7 +48,7 @@ ylabel(colorbar,'Potentiaal')
 daspect([1 1 1])
 
 % plot: equipotentiaallijnen + stroomlijnen
-figure(3), hold on;
+figure(3), hold on, box on;
 contourf(X,Y,P,20)
 streamslice(X,Y,vx,vy,1)
 colorbar;
@@ -62,7 +62,7 @@ legend([source,sink],'Source','Sink')
 set(gca,'FontSize',11)
 xlabel('x-as')
 ylabel('y-as')
-title({'Source-Sink (met |Q_1| = |Q_2|):','Equipotentiaallijnen \phi & Stroomlijnen \psi'})
+title({'Source-Sink (met |Q_1| = |Q_2|):','Equipotentiaallijnen \phi & Stroomlijnen \psi & Snelheidsvectoren'})
 daspect([1 1 1])
 
 %% Deel 2
@@ -81,7 +81,7 @@ minY = -1; maxY = 1;
 [X,Y] = meshgrid(linspace(minX,maxX,nX),linspace(minY,maxY,nY));
 
 % plot: snelheidsvectoren & stroomlijnen
-figure(4), hold on;
+figure(4), hold on, box on;
 streamslice(X,Y,vx,vy,5)
 
 % labels
@@ -101,7 +101,7 @@ clear;
 % plots: Q*l = cte
 figure(5);
 
-subplot(4,1,1), hold on;
+subplot(4,1,1), hold on, box on;
     % data import
     vx = importdata('O1_D3_1_vectors_x.txt','\t');
     vy = importdata('O1_D3_1_vectors_y.txt','\t');
@@ -127,7 +127,7 @@ subplot(4,1,1), hold on;
     title({'Source-Sink (met |Q_1| = |Q_2| en Q*l = c^{te}):','Stroomlijnen \psi & Snelheidsvectoren'},'FontSize',11)
     daspect([1 1 1])
     
-subplot(4,1,2), hold on;
+subplot(4,1,2), hold on, box on;
     % data import
     vx = importdata('O1_D3_2_vectors_x.txt','\t');
     vy = importdata('O1_D3_2_vectors_y.txt','\t');
@@ -153,7 +153,7 @@ subplot(4,1,2), hold on;
     %title({'Source-Sink (met |Q_1| = |Q_2| en Q*l = c^{te}):','Stroomlijnen \psi & Snelheidsvectoren'},'FontSize',11)
     daspect([1 1 1])
     
-subplot(4,1,3), hold on;
+subplot(4,1,3), hold on, box on;
     % data import
     vx = importdata('O1_D3_3_vectors_x.txt','\t');
     vy = importdata('O1_D3_3_vectors_y.txt','\t');
@@ -179,7 +179,7 @@ subplot(4,1,3), hold on;
     %title({'Source-Sink (met |Q_1| = |Q_2| en Q*l = c^{te}):','Stroomlijnen \psi & Snelheidsvectoren'},'FontSize',11)
     daspect([1 1 1])
 
-subplot(4,1,4), hold on;
+subplot(4,1,4), hold on, box on;
     % data import
     vx = importdata('O1_D3_4_vectors_x.txt','\t');
     vy = importdata('O1_D3_4_vectors_y.txt','\t');
