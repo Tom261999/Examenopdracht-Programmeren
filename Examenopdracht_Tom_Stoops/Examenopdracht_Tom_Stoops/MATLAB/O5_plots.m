@@ -190,7 +190,6 @@ subplot(4,1,4), hold on;
 %% Deel 4
 clear;
 
-
 % importeer data
 vx = importdata('O5_D4_vectors_x.txt','\t');
 vy = importdata('O5_D4_vectors_y.txt','\t');

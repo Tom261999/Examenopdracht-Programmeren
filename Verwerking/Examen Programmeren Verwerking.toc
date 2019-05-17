@@ -1,2 +1,2 @@
 \babel@toc {dutch}{}
-\contentsline {section}{\numberline {1}Inleiding}{2}{section.1}
+\contentsline {section}{\numberline {1}Probleem 1: Superpositie van source-sink pair}{2}{section.1}
