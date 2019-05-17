@@ -15,21 +15,21 @@ int main() {
 	Opdracht_2();
 	Opdracht_3();
 	Opdracht_4();
-*/	
-	
 	Opdracht_5();
-	
-	/*
-	Opdracht_6();
 	*/
+	
+	Opdracht_6();
+	
 
-	/*Vortex vortex(1, 0, 1);
+	/*
+	Vortex vortex(1, 0, 1);
 	Vortex vortex2(-1, 0, -1);
 	Uniform uniform(3.14 / 2, -4);
 	Grid mygrid(-2, 2, -2, 2, 100, 100);
 	mygrid.addBaseFlow(&vortex);
 	mygrid.addBaseFlow(&vortex2);
-	mygrid.testOutput();*/
+	mygrid.testOutput();
+	*/
 
 	/*
 	Grid mygrid(-1, 1, -1, 1, 200, 200);

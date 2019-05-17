@@ -236,6 +236,7 @@ void Opdracht_6() {
 	opdr6.writeStream("O6_D1_stream");
 	opdr6.writePotential("O6_D1_potential");
 	opdr6.writeVelocity("O6_D1_vectors");
+	opdr6.writePotential("O6_D1_drukcoeff");
 
 	std::cout << "\n\t-------------------------------------------------------------------" << std::endl;
 	std::cout << "\t| Opdracht 6: Deel 2: U_infty = kappa = 1, Gamma 10 * pi > 8 * pi |" << std::endl;
