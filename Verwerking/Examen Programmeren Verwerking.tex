@@ -39,6 +39,8 @@
 \newcommand{\avg}[1]{\left\langle#1\right\rangle}
 \newcommand{\ta}{$\pm$}
 \newcommand{\cirkel}[1]{\raisebox{.5pt}{\textcircled{\raisebox{-1.1pt} {#1}}}}
+\let\oldarctan\arctan
+\renewcommand{\arctan}[1]{\oldarctan\p{#1}}
 %-----------
 \captionsetup{width=0.8\textwidth}
 %-----------
@@ -48,6 +50,10 @@
 \tableofcontents
 
 \newpage
+\section{Inleiding}
+  \noindent
+  ...
+
 \section{Probleem 1: Superpositie van source-sink pair}
   \noindent
   Voor de eerste opdracht bekeken we de superpositie van een source-sink paar. Voor de configuratie waar de source geplaatst is op $\p{-1,0}$ en sink op $\p{1,0}$ beide met gelijke sterkte $Q$ vinden we de stroomlijnen en snelheidsvectoren zoals weergegeven op figuur \ref{probleem1_1}, wat een zeer intu\"itief resultaat is. Op figuur \ref{probleem1_2} zijn de equipotentiaallijnen weergegeven op een contourplot. Dit komt ook overeen met intu\"itie, op figuur \ref{probleem1_3} zijn de plots samen weergegeven. Op deze figuur kan men duidelijk de relatie tussen snelheidsvectoren en potentiaal vinden zoals gegeven in \cite{opdracht}:
@@ -196,7 +202,234 @@
 \newpage
 \section{Probleem 3: Een source-sink pair in een uniform flow}
   \noindent
-  ...
+  Voor deze opdracht onderzoeken we een Rankine Oval, gevormd door een source-sink paar in een uniforme stroming. Voor een source-sink paar met gelijke sterkte in een uniforme stroom worden de stroomlijnen en snelheidsvectoren gevisualiseerd op figuur \ref{probleem3_1}. We kunnen eenvoudig bepalen welke stroomlijnen deze Rankine oval beschrijven, daar deze stroomlijnen ook door de stagnatiepunten lopen. We leiden de afmetingen van de Rankine oval af in functie van de sterkte van de source en sink. We beginnen hierbij vanuit de superpositie van stroomfuncties:\footnote{Gekende variabelen zoals positie en hoek zijn reeds ingevuld daar we de afmetingen slechts in functie van de sterktes willen bepalen.}
+
+  \begin{equation*}
+    \left\{
+    \begin{align}
+      \psi_{uniform}\p{x,y} &= U_\infty y \\
+      \psi_{source}\p{x,y} &= \frac{Q}{2\pi}\arctan{\frac{y}{x+1}} \\
+      \psi_{sink}\p{x,y} &= -\frac{Q}{2\pi}\arctan{\frac{y}{x-1}}
+    \end{align}
+    \right.
+  \end{equation*}
+
+  \noindent
+  Waar direct uit volgt dat:
+
+  \begin{equation*}
+    \psi_{totaal}\p{x,y} =  U_\infty y+\frac{Q}{2\pi}\s{\arctan{\frac{y}{x+1}}-\arctan{\frac{y}{x-1}}}
+  \end{equation*}
+
+  \noindent
+  Dan bepalen we de positie van de stagnatiepunten op analoge wijze aan de bepaling hiervan in opdracht 2, ook weten we uit de symmetrie van het probleem dat de stagnatiepunten gelegen zijn op $y = 0$, dus zullen we enkel zoeken waar $v_x$ nul wordt. We beginnen weer vanuit het superpositie beginsel:\footnote{Gekende variabelen zoals positie en hoek zijn reeds ingevuld.}
+
+  \begin{equation*}
+    \left\{
+    \begin{align*}
+      v_{uniform,x}\p{x,y} &= U_\infty \\
+      v_{source,x}\p{x,y} &= \frac{Q}{2\pi}\frac{x+1}{(x+1)^2+y^2} \\
+      v_{sink,x}\p{x,y} &= -\frac{Q}{2\pi}\frac{x-1}{(x-1)^2+y^2}
+    \end{align*}
+    \right.
+  \end{equation*}
+
+  \noindent
+  Waar direct uit volgt dat:\footnote{Mits invullen van het gekende dat $y = 0$.}
+
+  \begin{equation*}
+    v_{totaal,x}\p{x,0} &= U_\infty + \frac{Q}{2\pi}\p{\frac{1}{x+1}-\frac{1}{x-1}}
+  \end{equation*}
+
+  \noindent
+  Dit kunnen we dan oplossen naar $x$ door te stellen dat $v_{totaal}\p{x_{stagnatie},0} = 0$, dit levert na vereenvoudiging:
+
+  \begin{equation*}
+    x_{stagnatie} = \pm\sqrt{\frac{Q+\pi U_\infty}{\pi U_\infty}}
+  \end{equation*}
+
+  \noindent
+  Dit komt dan ook overeen met de lengte van de halve lange as van de ellips beschreven door de Rankine oval. Om de korte lange as te bepalen van de ellips maken we gebruik van de stroomfunctie die we eerder hadden afgeleid en stellen dan dat de halve lange as gegeven wordt door $y$ waarvoor geldt dat:
+
+  \begin{equation*}
+    \psi\p{0,y} = \psi\p{x_{stagnatie},0}
+  \end{equation*}
+
+  \noindent
+  Invullen geeft dan:
+
+  \begin{align*}
+    0 &= U_\infty y+\frac{Q}{2\pi}\s{\arctan{y}-\arctan{-y}} \\
+    0 &= U_\infty y+\frac{Q}{\pi}\arctan{y}
+  \end{align*}
+
+  \noindent
+  Dit geeft dan volgende relatie voor $y$, die enkel (numeriek) opgelost kan worden indien de sterktes ingegeven worden:
+
+  \begin{equation*}
+    y = \tan\p{\frac{\pi U_\infty y}{Q}}
+  \end{equation*}
+
+  \noindent
+  Vervolgens werd ook de drukco\"effici\"ent berekend met de gegeven formule \cite{opdracht}, waarmee het contourplot op figuur \ref{probleem3_2} gevormd werd. Hierop zien we dat de drukco\"effic\"ent maximaal ($C_p = 1$) in de twee stagnatiepunten. Dit is een intu\"itief eenvoudig resultaat daar dit de enige twee punten zijn waarvan de stromen van de source/sink en de uniforme stroom ``botsen'' en tot een stilstand komen. \\
+
+  \noindent
+  Tot slot van deze opdracht keken we nog naar het geval waarbij de source en sink verschillende sterktes hebben, hiervoor is de weergave van de stroomlijnen en snelheidsvectoren gegeven op figuur \ref{probleem3_3}. Hierop hebben we de source sterker gemaakt dan de uniforme stroming en de sink, waarbij we een hybride figuur zien tussen de Rankine oval en Rankine half-body. Dit is enigzins logisch daar je dit systeem sou kunnen construeren door het optellen van 2 systemen:
+  \begin{enumerate}
+    \item Een systeem waar men de Rankine oval waarneemt.
+    \item Een systeem waar men de Rankine half body waarneemt.
+  \end{enumerate}
+
+  \FloatBarrier
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem3_1.eps}
+    \caption{Stroomlijnen en snelheidsvectoren van een source-sink paar in een uniforme stroom met gelijke sterkten ($Q_{source} = Q_{sink} = U_\infty$), met een duidelijke Rankine oval.}
+    \label{probleem3_1}
+  \end{figure}
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem3_2.eps}
+    \caption{Contourplot van de drukco\"effici\"ent $C_p$ voor een source-sink paar in uniforme stroom met gelijke sterkten. De twee stagnatiepunten zijn duidelijk zichtbaar daar de drukco\"effici\"ent $C_p$ maximaal wordt.}
+    \label{probleem3_2}
+  \end{figure}
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem3_3.eps}
+    \caption{Source-sink paar in een uniforme stroom met gelijke sterkten ($Q_{source} = Q_{sink} = U_\infty$), met een duidelijke Rankine oval.}
+    \label{probleem3_3}
+  \end{figure}
+  \FloatBarrier
+
+
+
+\section{Probleem 4: Een source-sink doublet in een uniforme flow}
+  \noindent
+  In deze opdracht beschouwen we een source-sink doublet in een uniforme stroom. De snelheidsvectoren en stroomlijnen hiervoor zijn weergegeven in figuur \ref{probleem4_1}. We tonen dan dat de straal van de cirkel gegeven door de Rankin oval voor een doublet in uniforme stroming gegeven is door:
+
+  \begin{equation*}
+    a = \sqrt{\frac{\kappa}{2\pi U_\infty}}
+  \end{equation*}
+
+  \noindent
+  Uit de literatuur \cite{cursus} weten we ook dat de Rankine oval gegeven wordt door de lijn daar de stroomfunctie $\psi$ gelijk is aan nul. We maken dan gebruik van het superpositiebeginsel om de stroomfunctie voor deze situatie opte stellen:
+
+  \begin{equation*}
+    \left\{
+    \begin{align}
+      \psi_{uniform}\p{x,y} &= U_\infty\p{y\cos\alpha+x\sin\alpha} \\
+      \psi_{doublet}\p{x,y} &= -\frac{\kappa}{2\pi}\frac{y}{x^2+y^2}
+    \end{align}
+    \right.
+  \end{equation*}
+
+  \noindent
+  Dit levert dan direct:\footnote{Na invullen van enkele gekende variabelen.}
+
+  \begin{equation*}
+    \psi_{totaal}\p{x,y} = U_\infty y - \frac{\kappa}{2\pi}\frac{y}{x^2+y^2}
+  \end{equation*}
+
+  \noindent
+  We stellen deze dan $\psi_{totaal} = 0$ en herschikken de termen:
+
+  \begin{equation*}
+    x^2+y^2 = \frac{\kappa}{2\pi U_\infty}
+  \end{equation*}
+
+  \noindent
+  Eenvoudige geometrie leert ons dat de straal $r$ gelijk is aan $x^2+y^2$ zodat er volgt dat de straal van de Rankine ovaal/cirkel hier gegeven is door:
+
+  \begin{equation*}
+    r = \sqrt{\frac{\kappa}{2\pi U_\infty}} \overset{!}{=} a
+  \end{equation*}
+
+  \noindent
+  Vervolgens tonen we ook aan dat de drukco\"effici\"ent gegeven is door volgend voorschrift:\footnote{Op de cirkel met straal $a$.}
+
+  \begin{equation*}
+    C_p\p{r=a,\theta} = 1-4\sin^2\theta
+  \end{equation*}
+
+  \noindent
+  We vertrekken hiervoor vanuit het gekende \cite{opdracht}:
+
+  \begin{equation*}
+    C_p\p{x,y} = 1-\frac{\s{V\p{x,y}}^2}{V_\infty^2}
+  \end{equation*}
+
+  \noindent
+  Indien we dan ook de snelheid bepalen voor dit systeem in poolco\"ordinaten en ingeven dat $r = a$ kunnen we deze uitdrukking schrijven als:
+
+  \begin{equation*}
+    C_p\p{r,\theta} = 1-\frac{1}{U_\infty^2}\s{\p{U_\infty-\frac{\kappa}{2\pi}\frac{\cos^2\theta-\sin^2\theta}{a^2}}^2+\p{\frac{\kappa}{2\pi}\frac{2\cos\theta\sin\theta}{a^2}}^2}
+  \end{equation*}
+
+  \noindent
+  Verder schrappen en verder uitwerken levert dan direct het gevraagde:
+
+  \begin{equation*}
+    C_p\p{r=a,\theta} \overset{!}{=} 1-4\sin^2\theta
+  \end{equation*}
+
+  \noindent
+  Deze curve is geplot op figuur \ref{probleem4_2}. Wat hieraan opvalt is dat de drukco\"effici\"ent dus gelijk is op $\theta = 0$ en $\theta = \pi$! Dit betekent dat in onsamendrukbare laminaire stroom er geen kracht uitgeoefend wordt op een cilinder in een uniforme stroom!
+
+  \FloatBarrier
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem4_1.eps}
+    \caption{Stroomlijnen en snelheidsvectoren voor een source-sink doublet in een uniforme stroming.}
+    \label{probleem4_1}
+  \end{figure}
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem4_2.eps}
+    \caption{Plot van de drukco\"effici\"ent op straal $a$ rond een doublet in uniforme stroom.}
+    \label{probleem4_2}
+  \end{figure}
+  \FloatBarrier
+
+\section{Probleem 5: Vortices}
+  \noindent
+  In deze opdracht onderzoeken we algemeen gebruik van vortices en de effecten van het combineren van verschillende vortices, wat we eerst numeriek aanpakken en dan met een analytische methode. Allereerst maken we een eenvoudige vortex in de oorsprong, waarvan de stroomlijnen en snelheidsvectoren weergegeven zijn op figuur \ref{probleem5_1}. We zien hier een typische cirkelvormige stroom die men zou verwachten van een vortex. Indien we deze vortex echter combineren met een sink (op dezelfde positie) zien we een heel intu\"itief resultaat opdagen, namelijk een waterkolk waarvan de stroomlijnen en snelheidsvectoren weergegeven zijn op figuur \ref{probleem5_2}.\\
+
+  \noindent
+  Dan kunnen we ook meerder vortices combineren en zo de effecten van een vortexsheet onderzoeken. Voor de numerieke methode zullen we $N$ vortices met gelijke sterkte plaatsen in het $x$ interval $[-2,2]$. Op figuur \ref{probleem5_3} geven we de stroomlijnen en snelheidsvectoren gevonden voor volgende waarden van $N$:
+
+  \begin{equation*}
+    N\in\left\{ 3, 4, 5, 10 \right\}
+  \end{equation*}
+
+  \noindent
+  We zien dat de stromen boven en onder de vortices steeds evenwijdiger komen te liggen en in tegengestelde richting lopen. Dit zien we ook wanneer we de analytische oplossing voor een oneindige rij van vortices nemen zoals weergegeven op figuur \ref{probleem5_4}. We zien dus dat aangezien de stroom boven de vortices in de tegengestelde richting loopt aan de stroom onder de vortices kunnen we een vortexsheet (oneindig lang) gebruiken voor simulaties die werken aan het oppervlak tussen twee flu\"ida met verschillende snelheden.
+
+  \FloatBarrier
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem5_1.eps}
+    \caption{Snelheidsvectoren en stroomlijnen van een vortex geven een cirkelvormige stroom.}
+    \label{probleem5_1}
+  \end{figure}
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem5_2.eps}
+    \caption{Combinatie van een vortex met een sink geeft een draaikolk.}
+    \label{probleem5_2}
+  \end{figure}
+  \begin{figure}[ht!]
+    \centering\vspace{-1.5cm}
+    \includegraphics[width = \textwidth]{plots/probleem5_3.eps}\vspace{-1cm}
+    \caption{De plots geven de stroomlijnen en snelheidsvectoren weer voor $N$ vortices equidistant geplaatst tussen $x\in[-2,2]$, voor $N\in\{ 3, 4, 5, 10 \}$.}
+    \label{probleem5_3}
+  \end{figure}
+  \begin{figure}[ht!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/probleem5_4.eps}
+    \caption{Voor een oneindig lange reeks equidistante vortices vinden we dat de vortices een interface opleveren tussen twee stromen in tegengestelde richtingen.}
+    \label{probleem5_4}
+  \end{figure}
+  \FoatBarrier
 
 
 \newpage

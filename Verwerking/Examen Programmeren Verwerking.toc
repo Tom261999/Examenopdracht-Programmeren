@@ -1,5 +1,8 @@
 \babel@toc {dutch}{}
-\contentsline {section}{\numberline {1}Probleem 1: Superpositie van source-sink pair}{2}{section.1}
+\contentsline {section}{\numberline {1}Inleiding}{2}{section.1}
+\contentsline {section}{\numberline {2}Probleem 1: Superpositie van source-sink pair}{2}{section.2}
 \contentsline {paragraph}{Opmerking:}{2}{section*.2}
-\contentsline {section}{\numberline {2}Probleem 2: Een source in uniforme stroming}{6}{section.2}
-\contentsline {section}{\numberline {3}Probleem 3: Een source-sink pair in een uniform flow}{8}{section.3}
+\contentsline {section}{\numberline {3}Probleem 2: Een source in uniforme stroming}{6}{section.3}
+\contentsline {section}{\numberline {4}Probleem 3: Een source-sink pair in een uniform flow}{8}{section.4}
+\contentsline {section}{\numberline {5}Probleem 4: Een source-sink doublet in een uniforme flow}{12}{section.5}
+\contentsline {section}{\numberline {6}Probleem 5: Vortices}{14}{section.6}
