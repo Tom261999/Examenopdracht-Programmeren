@@ -6,13 +6,10 @@
 
 // Constructor & Destructor
 
-Grid::Grid(double xmin_in, double xmax_in, double ymin_in, double ymax_in, int xstep_in, int ystep_in) {
+Grid::Grid(double xmin_in, double xmax_in, double ymin_in, double ymax_in, int xstep_in, int ystep_in) : xstep(checkStep(xstep_in)), ystep(checkStep(ystep_in)) {
 	std::cout << "<<Grid Constructor>>" << std::endl;
 
-	// Input checks
-	xstep = checkStep(xstep_in);
-	ystep = checkStep(ystep_in);
-
+	// Input checks: is x_min < x_max en y_min < y_max ?
 	if (xmin_in < xmax_in) {
 		xmin = xmin_in;
 		xmax = xmax_in;
@@ -38,7 +35,6 @@ Grid::Grid(double xmin_in, double xmax_in, double ymin_in, double ymax_in, int x
 	for (int i = 0; i < xstep; i++)	{
 		xaxis.push_back(xmin + i * (xmax - xmin) / xstep);
 	};
-
 	for (int i = 0; i < ystep; i++) {
 		yaxis.push_back(ymin + i * (ymax - ymin) / ystep);
 	};
@@ -50,7 +46,6 @@ Grid::~Grid() {
 
 
 // Input check functie
-
 int Grid::checkStep(int step) {
 	if (step == 0)
 	{
@@ -67,8 +62,7 @@ int Grid::checkStep(int step) {
 };
 
 
-// Essentiële functies
-
+// Manipulatie van vector van fundamentele oplossingen
 void Grid::addBaseFlow(BaseFlow* bfPtr) { // bfPtr is een pointer naar een fundamentele oplossing van ons systeem
 	fundSoln.push_back(bfPtr);
 };
@@ -77,19 +71,19 @@ void Grid::clearBaseFlow() { // maakt de vector met fundamentele oplossingen lee
 	fundSoln.clear();
 };
 
+// Naar bestand wegschrijven
 void Grid::writeStream(std::string filename) const {
 	filename += ".txt";
-	filename = "Output\\" + filename; // zorgt voor een handiger output pad -> zo komen ze niet allemaal naast de header- en source-files!!
+	filename = "Output\\" + filename; // zorgt voor een handiger output pad -> zo komen ze niet allemaal naast de header- en source-files
 	std::ofstream File(filename, std::ios::out);
 
 	if (!File) {
 		std::cerr << "<Error>: Outputfile niet gevonden." << std::endl;
 		exit(1);
 	}
-	else {
+	else { // Eerst loopen we over de oplossingen van de fundamentele oplossing om superpositiebeginselen toe te passen, vervolgens over de x-as en dan met de buitenste loop over de y-as
 		for (int j = 0; j < ystep; j++) {
 			for (int i = 0; i < xstep; i++) {
-
 				double value = 0;
 
 				for (int k = 0; k < fundSoln.size(); k++) {
@@ -100,20 +94,19 @@ void Grid::writeStream(std::string filename) const {
 					value += soln->getStreamVal(x, y);
 				}
 
-				if (isnan(value)) {
+				if (isnan(value)) { // Matlab kan niet werken met "nan(ind)", de output van C++ daarom vervangen we deze door de string "NaN" waar Matlab wel mee kan werken
 					File << "NaN\t";
 				}
 				else {
-					File << std::fixed << std::setprecision(4) << value << "\t";
+					File << std::fixed << std::setprecision(4) << value << "\t"; // we stellen de precisie (fixed) in op 4 cijfers na de komma voor een duidelijke structuur in de output + we gebruiken een tab ("\t") als delimiter
 				}
 			}
-
-			File << "\n";
+			File << "\n"; // start de volgende lijn in het bestand na doorlopen van de x-as
 		}
 	}
 };
 
-void Grid::writePotential(std::string filename) const {
+void Grid::writePotential(std::string filename) const { // Volledig analoog aan witeStream, zie lijnen 75-108
 	filename += ".txt";
 	filename = "Output\\" + filename;
 	std::ofstream File(filename, std::ios::out);
@@ -125,7 +118,6 @@ void Grid::writePotential(std::string filename) const {
 	else {
 		for (int j = 0; j < ystep; j++) {
 			for (int i = 0; i < xstep; i++) {
-
 				double value = 0;
 
 				for (int k = 0; k < fundSoln.size(); k++) {
@@ -143,13 +135,12 @@ void Grid::writePotential(std::string filename) const {
 					File << std::fixed << std::setprecision(4) << value << "\t";
 				}
 			}
-
 			File << "\n";
 		}
 	}
 };
 
-void Grid::writeVelocity(std::string filename) const {
+void Grid::writeVelocity(std::string filename) const { // Volledig analoog aan witeStream, zie lijnen 75-108, maar opgedeeld in een x- en y- bestand voor de verschillende componenten van de vector
 	// Voor x component
 	std::string xname = filename + "_x.txt";
 	xname = "Output\\" + xname;
@@ -162,7 +153,6 @@ void Grid::writeVelocity(std::string filename) const {
 	else {
 		for (int j = 0; j < ystep; j++) {
 			for (int i = 0; i < xstep; i++) {
-
 				double value = 0;
 
 				for (int k = 0; k < fundSoln.size(); k++) {
@@ -180,7 +170,6 @@ void Grid::writeVelocity(std::string filename) const {
 					xFile << std::fixed << std::setprecision(4) << value << "\t";
 				}
 			}
-
 			xFile << "\n";
 		}
 	}
@@ -197,7 +186,6 @@ void Grid::writeVelocity(std::string filename) const {
 	else {
 		for (int j = 0; j < ystep; j++) {
 			for (int i = 0; i < xstep; i++) {
-
 				double value = 0;
 
 				for (int k = 0; k < fundSoln.size(); k++) {
@@ -215,13 +203,12 @@ void Grid::writeVelocity(std::string filename) const {
 					yFile << std::fixed << std::setprecision(4) << value << "\t";
 				}
 			}
-
 			yFile << "\n";
 		}
 	}
 };
 
-void Grid::writeCp(std::string filename, Uniform* UniPtr) const {
+void Grid::writeCp(std::string filename, Uniform* UniPtr) const { // Zeer gelijkaardig aan writeStream, zie lijnen 75-108, maar hier geven we ook een pointer naar een Uniform object mee opdat we hieruit U_\infty (= V_\infty) kunnen bepalen
 	filename += ".txt";
 	filename = "Output\\" + filename; // zorgt voor een handiger output pad -> zo komen ze niet allemaal naast de header- en source-files!!
 	std::ofstream File(filename, std::ios::out);
@@ -231,9 +218,9 @@ void Grid::writeCp(std::string filename, Uniform* UniPtr) const {
 		exit(1);
 	}
 	else {
-		double sterkte = UniPtr->getSterkte();
+		double sterkte = UniPtr->getSterkte(); // Haal de sterkte = U_\infty uit de uniforme stroom
 
-		for (int j = 0; j < ystep; j++) {
+		for (int j = 0; j < ystep; j++) { // We loopen over het gehele grid (en later ook de fundamentele oplossingen) om zo V^2 = v_x^2+v_y^2 te bepalen
 			for (int i = 0; i < xstep; i++) {
 
 				double x = xaxis.at(i);
@@ -246,10 +233,9 @@ void Grid::writeCp(std::string filename, Uniform* UniPtr) const {
 
 					vx += soln->getVelocityVec(x,y).at(0);
 					vy += soln->getVelocityVec(x, y).at(1);
-
 				}
 
-				double Cp = 1 - ((vx * vx + vy * vy) / (sterkte * sterkte));
+				double Cp = 1 - ((vx * vx + vy * vy) / (sterkte * sterkte)); // Gegeven formule voor de drukcoefficient
 
 				if (isnan(Cp)) {
 					File << "NaN\t";
@@ -258,16 +244,7 @@ void Grid::writeCp(std::string filename, Uniform* UniPtr) const {
 					File << std::fixed << std::setprecision(4) << Cp << "\t";
 				}
 			}
-
 			File << "\n";
 		}
 	}
-};
-
-
-// TIJDELIJK
-void Grid::testOutput() {
-	writeStream("stream");
-	writePotential("pressure");
-	writeVelocity("vectors");
 };

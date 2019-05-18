@@ -11,6 +11,7 @@ public:
 	Grid(double xmin, double xmax, double ymin, double ymax, int xstep, int ystep);
 	~Grid();
 
+	// Manipulatie van de vector met fundamentele oplossingen
 	void addBaseFlow(BaseFlow* bfPtr);
 	void clearBaseFlow();
 
@@ -18,27 +19,24 @@ public:
 	void writeStream(std::string filename) const;
 	void writePotential(std::string filename) const;
 	void writeVelocity(std::string filename) const;
-	void writeCp(std::string filename, Uniform* UniPtr) const;
-	
-	//TIJDELIJK
-	void testOutput();
-	
+	void writeCp(std::string filename, Uniform* UniPtr) const;	
 
 private:
 	// Input check functies
 	int checkStep(int step);
 
 	// Gridparameters
-	int xstep; // geeft de resolutie van het grid
-	int ystep;
+	const int xstep; // geeft de resolutie van het grid
+	const int ystep;
 	double xmin; // geeft de minimale en maximale waarden voor x en y richtingen
 	double xmax;
 	double ymin;
 	double ymax;
 
+	// Assenstelsel -> hierover kan eenvoudig gelooped worden
 	std::vector<double> xaxis;
 	std::vector<double> yaxis;
 
-protected: // protected omdat ik deze nog wil accessen in DrukCoeff
-	std::vector<BaseFlow*> fundSoln; // bevat de fundamentele oplossingen
+	// Vector van fundamentele oplossingen
+	std::vector<BaseFlow*> fundSoln;
 };

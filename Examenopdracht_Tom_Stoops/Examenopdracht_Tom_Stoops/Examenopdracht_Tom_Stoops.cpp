@@ -18,7 +18,7 @@ int main() {
 	Opdracht_5();	
 	Opdracht_6();
 
-	// GRID, OPDRACHTEN en MAIN nog commentaren geven!
+	// nog commentaar in main!
 
 	return 0;
 };
