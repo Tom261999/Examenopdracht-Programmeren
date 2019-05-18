@@ -6,11 +6,12 @@ Vortex::Vortex(double xval_in, double yval_in, double sterkte_in) : BaseFlow(xva
 	std::cout << "<<Vortex Constructor>>" << std::endl;
 };
 
-
 Vortex::~Vortex() {
 	std::cout << "<<Vortex Destructor>>" << std::endl;
 };
 
+
+// get-functies
 double Vortex::getStreamVal(double x, double y) const {
 	double output = sterkte / (4 * M_PI) * log((x - xval) * (x - xval) + (y - yval) * (y - yval));
 	return output;

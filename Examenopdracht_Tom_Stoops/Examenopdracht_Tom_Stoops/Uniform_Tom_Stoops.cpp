@@ -2,7 +2,7 @@
 #include "Uniform_Tom_Stoops.h"
 
 
-Uniform::Uniform(double alpha_in, double sterkte_in) : BaseFlow(sterkte_in), alpha(alpha_in) {
+Uniform::Uniform(double alpha_in, double sterkte_in) : BaseFlow(sterkte_in), alpha(alpha_in) { // We gebruiken de minimale constructor gezien een unfirome stroom geen enkelvoudig gedefinieerde x- en y-waarden heeft van positie, alsook initialiseren we de hoek met de x-as (alpha)
 	std::cout << "<<Uniform Constructor>>" << std::endl;
 };
 
@@ -11,7 +11,9 @@ Uniform::~Uniform() {
 	std::cout << "<<Uniform Destructor>>" << std::endl;
 };
 
-double Uniform::getStreamVal(double x, double y) const {
+
+// get-functies, vergelijkingen gegeven in de opdracht
+double Uniform::getStreamVal(double x, double y) const { 
 	double output = sterkte * (y * cos(alpha) + x * sin(alpha));
 	return output;
 };
@@ -31,6 +33,6 @@ std::vector<double> Uniform::getVelocityVec(double x, double y) const {
 	return v;
 };
 
-double Uniform::getSterkte() {
+double Uniform::getSterkte() const { // nodig om drukcoefficient te bepalen -> zie klasse grid
 	return sterkte;
 };

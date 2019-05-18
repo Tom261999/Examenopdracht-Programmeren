@@ -5,13 +5,13 @@ public:
 	Uniform(double alpha_in, double sterkte_in);
 	~Uniform();
 
-	// Essenitële functies
-	double getStreamVal(double xval, double yval) const;
-	double getPotentialVal(double xval, double yval) const;
-	std::vector<double> getVelocityVec(double xval, double yval) const;
+	// get-functies
+	double getStreamVal(double x, double y) const;
+	double getPotentialVal(double x, double y) const;
+	std::vector<double> getVelocityVec(double x, double y) const;
 
-	double getSterkte();
+	double getSterkte() const; // Deze is nodig om de drukcoefficient te bepalen, daar de sterkte U_\infty gelijk is aan de snelheid op oneindig V_\infty
 
-protected:
-	const double alpha;
+private:
+	const double alpha; // Uniform heeft een extra parameter nodig: alpha, de hoek dat de stroomzin maakt met de x-as
 };

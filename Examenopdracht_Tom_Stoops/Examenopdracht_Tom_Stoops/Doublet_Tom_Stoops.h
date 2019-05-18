@@ -5,9 +5,9 @@ public:
 	Doublet(double xval_in, double yval_in, double sterkte_in);
 	~Doublet();
 
-	// Essentiële functies
-	double getStreamVal(double xval, double yval) const;
-	double getPotentialVal(double xval, double yval) const;
-	std::vector<double> getVelocityVec(double xval, double yval) const;
+	// get-functies
+	double getStreamVal(double x, double y) const;
+	double getPotentialVal(double x, double y) const;
+	std::vector<double> getVelocityVec(double x, double y) const;
 };
 

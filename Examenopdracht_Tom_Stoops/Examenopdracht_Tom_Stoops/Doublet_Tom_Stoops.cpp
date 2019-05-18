@@ -6,12 +6,12 @@ Doublet::Doublet(double xval_in, double yval_in, double sterkte_in) : BaseFlow(x
 	std::cout << "<<Doublet Constructor>>" << std::endl;
 };
 
-
 Doublet::~Doublet() {
 	std::cout << "<<Doublet Desconstructor>>" << std::endl;
 };
 
-// Essentiële functies
+
+// get-functies, vergelijkingen gegeven in de opdracht
 double Doublet::getStreamVal(double x, double y) const {
 	double output = -sterkte / (2 * M_PI) * (y - yval) / ((x - xval)*(x - xval) + (y - yval)*(y - yval));
 	return output;

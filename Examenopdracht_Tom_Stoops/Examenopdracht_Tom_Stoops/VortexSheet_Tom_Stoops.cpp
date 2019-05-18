@@ -3,17 +3,24 @@
 
 
 // Numerieke constructor
-VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in) : BaseFlow(xval_1_in, yval_in, sterkte_in), type("numeriek") {
+VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, double sterkte_in, int N_in) : BaseFlow(xval_1_in, yval_in, sterkte_in), type("numeriek") { // Numerieke versie
 	std::cout << "<<VortexSheet Constructor (Numeriek)>>" << std::endl;
 
-	// Check N
+	// Check input: N
 	if (N_in < 0) {
 		std::cerr << "<Warning>: N kan niet negatief zijn, we werken verder met absolute waarde van input." << std::endl;
 		N = abs(N_in);
 	}
-	else if (N_in == 1) {
-		std::cerr << "<Error>: N moet ten minste 2 zijn, voor een enkele vortex gebruik klasse Vortex!" << std::endl;
-		exit(1);
+	else if (abs(N_in) == 1) {
+		if (N_in > 0) {
+			std::cerr << "<Error>: N moet ten minste 2 zijn, voor een enkele vortex gebruik klasse Vortex!" << std::endl;
+			exit(1);
+		}
+		else {
+			std::cerr << "<Warning>: N kan niet negatief zijn, we werken verder met absolute waarde van input." << std::endl;
+			std::cerr << "<Error>: N moet ten minste 2 zijn, voor een enkele vortex gebruik klasse Vortex!" << std::endl;
+			exit(1);
+		}		
 	}
 	else if (N_in == 0) {
 		std::cerr << "<Error>: N kan niet 0 zijn!" << std::endl;
@@ -23,7 +30,8 @@ VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, dou
 		N = N_in;
 	}
 
-	if (xval2 == xval) {
+	// Check input: xval2
+	if (xval2 == xval) { // opmerking: xval2 moet niet per se groter zijn dan xval, daar a dan negatief zal worden het probleem zichzelf oplost
 		std::cerr << "<Error>: Ongeldige x-waarde voor de laatste vortex ingegeven!" << std::endl;
 		exit(1);
 	}
@@ -31,6 +39,7 @@ VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, dou
 		xval2 = xval_2_in;
 	}
 
+	// bereken de afstand tussen vortices en bepaal de locaties van de vortices (en stop deze in vector xloc)
 	a = (xval2 - xval) / (N-1);
 	xloc.resize(N, 0);
 
@@ -39,9 +48,10 @@ VortexSheet::VortexSheet(double xval_1_in, double xval_2_in, double yval_in, dou
 	}
 };
 
-VortexSheet::VortexSheet(double sterkte_in, double a_in) : BaseFlow(sterkte_in), type("analytisch") {
+VortexSheet::VortexSheet(double sterkte_in, double a_in) : BaseFlow(sterkte_in), type("analytisch") { // Analytische versie
 	std::cout << "<<VortexSheet Constructor (Analytisch)>>" << std::endl;
 
+	// Check input: a
 	if (a_in < 0) {
 		std::cerr << "<Warning>: a moet positief zijn, wer werken verder met de absolute waarde." << std::endl;
 		a = abs(a_in);
@@ -60,8 +70,7 @@ VortexSheet::~VortexSheet() {
 };
 
 
-// Essentiële functies
-
+// get-functies, vergelijkingen gegeven in de opdracht
 double VortexSheet::getStreamVal(double x, double y) const {
 	double output = 0;
 	if (type == "numeriek") {		
@@ -87,7 +96,7 @@ double VortexSheet::getPotentialVal(double x, double y) const {
 		}
 	}
 	else if (type == "analytisch") {
-		output = nan(0); // Uitdrukking niet gegeven, geeft NaN terug.
+		output = nan(0); // Uitdrukking niet gegeven in de opdracht, geeft NaN terug.
 	}
 	else {
 		std::cerr << "<Error>: Onverwacht type!" << std::endl;
