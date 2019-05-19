@@ -1,3 +1,10 @@
+/*
+	Inleiding Programmeren: Examenopdracht
+	Tom Stoops (s0173659)
+	Tom.Stoops@student.uantwerpen.be
+	Ingeleverd op: 19-05-2019
+ */
+
 #include "pch.h"
 #include "Grid_Tom_Stoops.h"
 #include <fstream>
@@ -5,7 +12,6 @@
 
 
 // Constructor & Destructor
-
 Grid::Grid(double xmin_in, double xmax_in, double ymin_in, double ymax_in, int xstep_in, int ystep_in) : xstep(checkStep(xstep_in)), ystep(checkStep(ystep_in)) {
 	std::cout << "<<Grid Constructor>>" << std::endl;
 
@@ -46,7 +52,7 @@ Grid::~Grid() {
 
 
 // Input check functie
-int Grid::checkStep(int step) {
+int Grid::checkStep(int step) const {
 	if (step == 0)
 	{
 		std::cerr << "<Error>: Gridstap kan niet 0 zijn." << std::endl;

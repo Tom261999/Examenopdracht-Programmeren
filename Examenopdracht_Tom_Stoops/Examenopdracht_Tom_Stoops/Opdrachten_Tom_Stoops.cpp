@@ -1,3 +1,10 @@
+/*
+	Inleiding Programmeren: Examenopdracht
+	Tom Stoops (s0173659)
+	Tom.Stoops@student.uantwerpen.be
+	Ingeleverd op: 19-05-2019
+ */
+
 #include "pch.h"
 #include "Opdrachten_Tom_Stoops.h"
 #include "Grid_Tom_Stoops.h"

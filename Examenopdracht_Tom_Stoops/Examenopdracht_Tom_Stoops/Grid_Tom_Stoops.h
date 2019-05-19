@@ -1,3 +1,10 @@
+/*
+	Inleiding Programmeren: Examenopdracht
+	Tom Stoops (s0173659)
+	Tom.Stoops@student.uantwerpen.be
+	Ingeleverd op: 19-05-2019
+ */
+
 #pragma once
 #include <iostream>
 #include <vector>
@@ -23,7 +30,7 @@ public:
 
 private:
 	// Input check functies
-	int checkStep(int step);
+	int checkStep(int step) const;
 
 	// Gridparameters
 	const int xstep; // geeft de resolutie van het grid

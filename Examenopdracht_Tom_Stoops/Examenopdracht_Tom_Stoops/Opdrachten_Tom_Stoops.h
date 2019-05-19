@@ -1,3 +1,10 @@
+/*
+	Inleiding Programmeren: Examenopdracht
+	Tom Stoops (s0173659)
+	Tom.Stoops@student.uantwerpen.be
+	Ingeleverd op: 19-05-2019
+ */
+
 #pragma once
 
 // Extra source & header files om orde te houden in de main(), we zullen iedere opdracht appart uitvoeren met behulp van een void functie waarin alles wat nodig is om de opdrachten uit te voeren aangeroepen wordt
