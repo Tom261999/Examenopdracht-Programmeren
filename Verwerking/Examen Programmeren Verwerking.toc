@@ -1,8 +1,11 @@
 \babel@toc {dutch}{}
 \contentsline {section}{\numberline {1}Inleiding}{2}{section.1}
-\contentsline {section}{\numberline {2}Probleem 1: Superpositie van source-sink pair}{2}{section.2}
-\contentsline {paragraph}{Opmerking:}{2}{section*.2}
-\contentsline {section}{\numberline {3}Probleem 2: Een source in uniforme stroming}{6}{section.3}
-\contentsline {section}{\numberline {4}Probleem 3: Een source-sink pair in een uniform flow}{8}{section.4}
-\contentsline {section}{\numberline {5}Probleem 4: Een source-sink doublet in een uniforme flow}{12}{section.5}
-\contentsline {section}{\numberline {6}Probleem 5: Vortices}{14}{section.6}
+\contentsline {section}{\numberline {2}Problemen}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Probleem 1: Superpositie van source-sink pair}{3}{subsection.2.1}
+\contentsline {paragraph}{Opmerking:}{3}{section*.2}
+\contentsline {subsection}{\numberline {2.2}Probleem 2: Een source in uniforme stroming}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Probleem 3: Een source-sink pair in een uniform flow}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Probleem 4: Een source-sink doublet in een uniforme flow}{13}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Probleem 5: Vortices}{16}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Probleem 6: Lift op een vortex}{20}{subsection.2.6}
+\contentsline {section}{\numberline {3}Conclusie}{26}{section.3}
