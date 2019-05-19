@@ -10,6 +10,7 @@
 #include "Opdrachten_Tom_Stoops.h"
 
 int main() {
+	// Alle data wordt weggeschreven naar de projectmap "/Output" in .txt-formaat.
 
 	Opdracht_1();
 	/*
