@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.8.23)  19 MAY 2019 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.8.23)  19 MAY 2019 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -414,42 +414,51 @@ Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 53.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 57.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 57.
- [2]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 58.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 58.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 59.
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-
- []
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 83.
-(c:/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 55.
+ (c:/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 62.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 62.
+[2]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 63.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 63.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 64.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+
+ []
+
 Package epstopdf Info: Source file: <plots/probleem1_1.eps>
 (epstopdf)                    date: 2019-05-17 15:30:03
 (epstopdf)                    size: 1652101 bytes
@@ -457,12 +466,12 @@ Package epstopdf Info: Source file: <plots/probleem1_1.eps>
 (epstopdf)                    date: 2019-05-17 15:32:56
 (epstopdf)                    size: 585433 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem1_1-eps-converted-to.pdf plots/probleem1_1.eps>
-(epstopdf)             \includegraphics on input line 88.
+(epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem1_1-eps-converted-to.pdf, id=71, 567.11874pt x 316.18124pt>
+<plots/probleem1_1-eps-converted-to.pdf, id=73, 567.11874pt x 316.18124pt>
 File: plots/probleem1_1-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem1_1-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem1_1-eps-converted-to.pdf  used on input line 88.
+Package pdftex.def Info: plots/probleem1_1-eps-converted-to.pdf  used on input line 93.
 (pdftex.def)             Requested size: 460.72124pt x 256.8725pt.
 Package epstopdf Info: Source file: <plots/probleem1_2.eps>
 (epstopdf)                    date: 2019-05-17 15:30:17
@@ -471,12 +480,12 @@ Package epstopdf Info: Source file: <plots/probleem1_2.eps>
 (epstopdf)                    date: 2019-05-17 15:45:46
 (epstopdf)                    size: 43852 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem1_2-eps-converted-to.pdf plots/probleem1_2.eps>
-(epstopdf)             \includegraphics on input line 94.
+(epstopdf)             \includegraphics on input line 99.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem1_2-eps-converted-to.pdf, id=72, 565.11125pt x 316.18124pt>
+<plots/probleem1_2-eps-converted-to.pdf, id=74, 565.11125pt x 316.18124pt>
 File: plots/probleem1_2-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem1_2-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem1_2-eps-converted-to.pdf  used on input line 94.
+Package pdftex.def Info: plots/probleem1_2-eps-converted-to.pdf  used on input line 99.
 (pdftex.def)             Requested size: 460.72124pt x 257.77951pt.
 Package epstopdf Info: Source file: <plots/probleem1_3.eps>
 (epstopdf)                    date: 2019-05-17 15:30:34
@@ -485,12 +494,12 @@ Package epstopdf Info: Source file: <plots/probleem1_3.eps>
 (epstopdf)                    date: 2019-05-17 15:45:48
 (epstopdf)                    size: 278572 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem1_3-eps-converted-to.pdf plots/probleem1_3.eps>
-(epstopdf)             \includegraphics on input line 100.
+(epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem1_3-eps-converted-to.pdf, id=73, 565.11125pt x 316.18124pt>
+<plots/probleem1_3-eps-converted-to.pdf, id=75, 565.11125pt x 316.18124pt>
 File: plots/probleem1_3-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem1_3-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem1_3-eps-converted-to.pdf  used on input line 100.
+Package pdftex.def Info: plots/probleem1_3-eps-converted-to.pdf  used on input line 105.
 (pdftex.def)             Requested size: 460.72124pt x 257.77951pt.
 Package epstopdf Info: Source file: <plots/probleem1_4.eps>
 (epstopdf)                    date: 2019-05-17 15:30:52
@@ -499,12 +508,12 @@ Package epstopdf Info: Source file: <plots/probleem1_4.eps>
 (epstopdf)                    date: 2019-05-17 15:45:50
 (epstopdf)                    size: 640956 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem1_4-eps-converted-to.pdf plots/probleem1_4.eps>
-(epstopdf)             \includegraphics on input line 106.
+(epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem1_4-eps-converted-to.pdf, id=74, 566.115pt x 316.18124pt>
+<plots/probleem1_4-eps-converted-to.pdf, id=76, 566.115pt x 316.18124pt>
 File: plots/probleem1_4-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem1_4-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem1_4-eps-converted-to.pdf  used on input line 106.
+Package pdftex.def Info: plots/probleem1_4-eps-converted-to.pdf  used on input line 111.
 (pdftex.def)             Requested size: 460.72124pt x 257.326pt.
 Package epstopdf Info: Source file: <plots/probleem1_5.eps>
 (epstopdf)                    date: 2019-05-17 15:32:12
@@ -513,86 +522,86 @@ Package epstopdf Info: Source file: <plots/probleem1_5.eps>
 (epstopdf)                    date: 2019-05-17 15:45:53
 (epstopdf)                    size: 540542 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem1_5-eps-converted-to.pdf plots/probleem1_5.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem1_5-eps-converted-to.pdf, id=75, 566.115pt x 794.97pt>
+<plots/probleem1_5-eps-converted-to.pdf, id=77, 566.115pt x 794.97pt>
 File: plots/probleem1_5-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem1_5-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem1_5-eps-converted-to.pdf  used on input line 112.
+Package pdftex.def Info: plots/probleem1_5-eps-converted-to.pdf  used on input line 117.
 (pdftex.def)             Requested size: 460.72124pt x 646.99113pt.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
- [3]
+(babel)             in language  on input line 121.
+[3]
 
 LaTeX Warning: Text page 4 contains only floats.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 [4 <./plots/probleem1_1-eps-converted-to.pdf> <./plots/probleem1_2-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
  [5 <./plots/probleem1_3-eps-converted-to.pdf> <./plots/probleem1_4-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 121.
  [6 <./plots/probleem1_5-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 124.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-./Examen Programmeren Verwerking.tex:152: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:157: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.152       \end{align}
+l.157       \end{align}
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 182.
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
@@ -603,12 +612,12 @@ Package epstopdf Info: Source file: <plots/probleem2_1.eps>
 (epstopdf)                    date: 2019-05-17 17:09:46
 (epstopdf)                    size: 282769 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem2_1-eps-converted-to.pdf plots/probleem2_1.eps>
-(epstopdf)             \includegraphics on input line 193.
+(epstopdf)             \includegraphics on input line 198.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem2_1-eps-converted-to.pdf, id=158, 567.11874pt x 316.18124pt>
+<plots/probleem2_1-eps-converted-to.pdf, id=159, 567.11874pt x 316.18124pt>
 File: plots/probleem2_1-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem2_1-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem2_1-eps-converted-to.pdf  used on input line 193.
+Package pdftex.def Info: plots/probleem2_1-eps-converted-to.pdf  used on input line 198.
 (pdftex.def)             Requested size: 460.72124pt x 256.8725pt.
 Package epstopdf Info: Source file: <plots/probleem2_2.eps>
 (epstopdf)                    date: 2019-05-17 15:34:21
@@ -617,64 +626,64 @@ Package epstopdf Info: Source file: <plots/probleem2_2.eps>
 (epstopdf)                    date: 2019-05-17 17:09:48
 (epstopdf)                    size: 55578 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem2_2-eps-converted-to.pdf plots/probleem2_2.eps>
-(epstopdf)             \includegraphics on input line 198.
+(epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem2_2-eps-converted-to.pdf, id=159, 567.11874pt x 316.18124pt>
+<plots/probleem2_2-eps-converted-to.pdf, id=160, 567.11874pt x 316.18124pt>
 File: plots/probleem2_2-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem2_2-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem2_2-eps-converted-to.pdf  used on input line 198.
+Package pdftex.def Info: plots/probleem2_2-eps-converted-to.pdf  used on input line 203.
 (pdftex.def)             Requested size: 460.72124pt x 256.8725pt.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 202.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 202.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 202.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 202.
+(babel)             in language  on input line 207.
 [8 <./plots/probleem2_1-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 210.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 210.
 
 
-./Examen Programmeren Verwerking.tex:215: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:220: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.215       \end{align}
+l.220       \end{align}
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 228.
+(babel)             in language  on input line 233.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 228.
+(babel)             in language  on input line 233.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 228.
+(babel)             in language  on input line 233.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 228.
+(babel)             in language  on input line 233.
 [9 <./plots/probleem2_2-eps-converted-to.pdf>]
 
-./Examen Programmeren Verwerking.tex:235: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:240: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235       \end{align*}
+l.240       \end{align*}
                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Examen Programmeren Verwerking.tex:243: Misplaced alignment tab character &.
-l.243       v_{totaal,x}\p{x,0} &
+./Examen Programmeren Verwerking.tex:248: Misplaced alignment tab character &.
+l.248       v_{totaal,x}\p{x,0} &
                                  = U_\infty + \frac{Q}{2\pi}\p{\frac{1}{x+1}...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -684,18 +693,18 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 282.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 282.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 282.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 282.
 [10]
 Package epstopdf Info: Source file: <plots/probleem3_1.eps>
 (epstopdf)                    date: 2019-05-17 15:34:54
@@ -704,12 +713,12 @@ Package epstopdf Info: Source file: <plots/probleem3_1.eps>
 (epstopdf)                    date: 2019-05-18 18:30:43
 (epstopdf)                    size: 252585 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem3_1-eps-converted-to.pdf plots/probleem3_1.eps>
-(epstopdf)             \includegraphics on input line 288.
+(epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem3_1-eps-converted-to.pdf, id=206, 567.11874pt x 316.18124pt>
+<plots/probleem3_1-eps-converted-to.pdf, id=207, 567.11874pt x 316.18124pt>
 File: plots/probleem3_1-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem3_1-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem3_1-eps-converted-to.pdf  used on input line 288.
+Package pdftex.def Info: plots/probleem3_1-eps-converted-to.pdf  used on input line 293.
 (pdftex.def)             Requested size: 460.72124pt x 256.8725pt.
 Package epstopdf Info: Source file: <plots/probleem3_2.eps>
 (epstopdf)                    date: 2019-05-17 15:35:14
@@ -718,12 +727,12 @@ Package epstopdf Info: Source file: <plots/probleem3_2.eps>
 (epstopdf)                    date: 2019-05-18 18:32:32
 (epstopdf)                    size: 58808 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem3_2-eps-converted-to.pdf plots/probleem3_2.eps>
-(epstopdf)             \includegraphics on input line 294.
+(epstopdf)             \includegraphics on input line 299.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem3_2-eps-converted-to.pdf, id=207, 566.115pt x 316.18124pt>
+<plots/probleem3_2-eps-converted-to.pdf, id=208, 566.115pt x 316.18124pt>
 File: plots/probleem3_2-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem3_2-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem3_2-eps-converted-to.pdf  used on input line 294.
+Package pdftex.def Info: plots/probleem3_2-eps-converted-to.pdf  used on input line 299.
 (pdftex.def)             Requested size: 460.72124pt x 257.326pt.
 Package epstopdf Info: Source file: <plots/probleem3_3.eps>
 (epstopdf)                    date: 2019-05-17 15:35:39
@@ -732,68 +741,68 @@ Package epstopdf Info: Source file: <plots/probleem3_3.eps>
 (epstopdf)                    date: 2019-05-18 18:32:34
 (epstopdf)                    size: 277400 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem3_3-eps-converted-to.pdf plots/probleem3_3.eps>
-(epstopdf)             \includegraphics on input line 300.
+(epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem3_3-eps-converted-to.pdf, id=208, 565.11125pt x 316.18124pt>
+<plots/probleem3_3-eps-converted-to.pdf, id=209, 565.11125pt x 316.18124pt>
 File: plots/probleem3_3-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem3_3-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem3_3-eps-converted-to.pdf  used on input line 300.
+Package pdftex.def Info: plots/probleem3_3-eps-converted-to.pdf  used on input line 305.
 (pdftex.def)             Requested size: 460.72124pt x 257.77951pt.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
  [11 <./plots/probleem3_1-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 309.
  [12 <./plots/probleem3_2-eps-converted-to.pdf> <./plots/probleem3_3-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 313.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 313.
 
 
-./Examen Programmeren Verwerking.tex:324: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:329: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.324       \end{align}
+l.329       \end{align}
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 378.
 [13
 
 ]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 379.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 379.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 379.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 379.
+(babel)             in language  on input line 384.
  [14]
 Package epstopdf Info: Source file: <plots/probleem4_1.eps>
 (epstopdf)                    date: 2019-05-17 15:36:33
@@ -802,12 +811,12 @@ Package epstopdf Info: Source file: <plots/probleem4_1.eps>
 (epstopdf)                    date: 2019-05-18 22:54:22
 (epstopdf)                    size: 228688 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem4_1-eps-converted-to.pdf plots/probleem4_1.eps>
-(epstopdf)             \includegraphics on input line 383.
+(epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem4_1-eps-converted-to.pdf, id=261, 565.11125pt x 316.18124pt>
+<plots/probleem4_1-eps-converted-to.pdf, id=262, 565.11125pt x 316.18124pt>
 File: plots/probleem4_1-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem4_1-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem4_1-eps-converted-to.pdf  used on input line 383.
+Package pdftex.def Info: plots/probleem4_1-eps-converted-to.pdf  used on input line 388.
 (pdftex.def)             Requested size: 460.72124pt x 257.77951pt.
 Package epstopdf Info: Source file: <plots/probleem4_2.eps>
 (epstopdf)                    date: 2019-05-17 15:36:52
@@ -816,39 +825,39 @@ Package epstopdf Info: Source file: <plots/probleem4_2.eps>
 (epstopdf)                    date: 2019-05-18 22:54:24
 (epstopdf)                    size: 14571 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem4_2-eps-converted-to.pdf plots/probleem4_2.eps>
-(epstopdf)             \includegraphics on input line 389.
+(epstopdf)             \includegraphics on input line 394.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem4_2-eps-converted-to.pdf, id=262, 565.11125pt x 316.18124pt>
+<plots/probleem4_2-eps-converted-to.pdf, id=263, 565.11125pt x 316.18124pt>
 File: plots/probleem4_2-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem4_2-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem4_2-eps-converted-to.pdf  used on input line 389.
+Package pdftex.def Info: plots/probleem4_2-eps-converted-to.pdf  used on input line 394.
 (pdftex.def)             Requested size: 460.72124pt x 257.77951pt.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 398.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 398.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 398.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 398.
  [15 <./plots/probleem4_1-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 403.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 403.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 416.
 [16 <./plots/probleem4_2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <plots/probleem5_1.eps>
 (epstopdf)                    date: 2019-05-17 15:37:56
@@ -857,12 +866,12 @@ Package epstopdf Info: Source file: <plots/probleem5_1.eps>
 (epstopdf)                    date: 2019-05-18 22:33:22
 (epstopdf)                    size: 489617 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem5_1-eps-converted-to.pdf plots/probleem5_1.eps>
-(epstopdf)             \includegraphics on input line 415.
+(epstopdf)             \includegraphics on input line 420.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem5_1-eps-converted-to.pdf, id=293, 567.11874pt x 316.18124pt>
+<plots/probleem5_1-eps-converted-to.pdf, id=294, 567.11874pt x 316.18124pt>
 File: plots/probleem5_1-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem5_1-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem5_1-eps-converted-to.pdf  used on input line 415.
+Package pdftex.def Info: plots/probleem5_1-eps-converted-to.pdf  used on input line 420.
 (pdftex.def)             Requested size: 460.72124pt x 256.8725pt.
 Package epstopdf Info: Source file: <plots/probleem5_2.eps>
 (epstopdf)                    date: 2019-05-17 15:38:19
@@ -871,12 +880,12 @@ Package epstopdf Info: Source file: <plots/probleem5_2.eps>
 (epstopdf)                    date: 2019-05-18 22:33:24
 (epstopdf)                    size: 620296 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem5_2-eps-converted-to.pdf plots/probleem5_2.eps>
-(epstopdf)             \includegraphics on input line 421.
+(epstopdf)             \includegraphics on input line 426.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem5_2-eps-converted-to.pdf, id=294, 566.115pt x 316.18124pt>
+<plots/probleem5_2-eps-converted-to.pdf, id=295, 566.115pt x 316.18124pt>
 File: plots/probleem5_2-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem5_2-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem5_2-eps-converted-to.pdf  used on input line 421.
+Package pdftex.def Info: plots/probleem5_2-eps-converted-to.pdf  used on input line 426.
 (pdftex.def)             Requested size: 460.72124pt x 257.326pt.
 Package epstopdf Info: Source file: <plots/probleem5_3.eps>
 (epstopdf)                    date: 2019-05-17 15:40:37
@@ -885,12 +894,12 @@ Package epstopdf Info: Source file: <plots/probleem5_3.eps>
 (epstopdf)                    date: 2019-05-18 22:34:41
 (epstopdf)                    size: 503243 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem5_3-eps-converted-to.pdf plots/probleem5_3.eps>
-(epstopdf)             \includegraphics on input line 427.
+(epstopdf)             \includegraphics on input line 432.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem5_3-eps-converted-to.pdf, id=295, 566.115pt x 700.6175pt>
+<plots/probleem5_3-eps-converted-to.pdf, id=296, 566.115pt x 700.6175pt>
 File: plots/probleem5_3-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem5_3-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem5_3-eps-converted-to.pdf  used on input line 427.
+Package pdftex.def Info: plots/probleem5_3-eps-converted-to.pdf  used on input line 432.
 (pdftex.def)             Requested size: 460.72124pt x 570.20178pt.
 Package epstopdf Info: Source file: <plots/probleem5_4.eps>
 (epstopdf)                    date: 2019-05-17 15:39:30
@@ -899,86 +908,86 @@ Package epstopdf Info: Source file: <plots/probleem5_4.eps>
 (epstopdf)                    date: 2019-05-18 22:34:43
 (epstopdf)                    size: 60128 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem5_4-eps-converted-to.pdf plots/probleem5_4.eps>
-(epstopdf)             \includegraphics on input line 433.
+(epstopdf)             \includegraphics on input line 438.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem5_4-eps-converted-to.pdf, id=296, 566.115pt x 316.18124pt>
+<plots/probleem5_4-eps-converted-to.pdf, id=297, 566.115pt x 316.18124pt>
 File: plots/probleem5_4-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem5_4-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem5_4-eps-converted-to.pdf  used on input line 433.
+Package pdftex.def Info: plots/probleem5_4-eps-converted-to.pdf  used on input line 438.
 (pdftex.def)             Requested size: 460.72124pt x 257.326pt.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
  [17 <./plots/probleem5_1-eps-converted-to.pdf> <./plots/probleem5_2-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
  [18 <./plots/probleem5_3-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 442.
  [19 <./plots/probleem5_4-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 439.
+(babel)             in language  on input line 444.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 439.
+(babel)             in language  on input line 444.
 
 
-./Examen Programmeren Verwerking.tex:456: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:461: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.456       \end{align}
+l.461       \end{align}
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Examen Programmeren Verwerking.tex:476: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:481: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.476       \end{align}
+l.481       \end{align}
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 499.
+(babel)             in language  on input line 504.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 499.
+(babel)             in language  on input line 504.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 499.
+(babel)             in language  on input line 504.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 499.
+(babel)             in language  on input line 504.
 [20
 
 ]
-./Examen Programmeren Verwerking.tex:505: Undefined control sequence.
+./Examen Programmeren Verwerking.tex:510: Undefined control sequence.
 <argument> 4\piU 
                  _\infty \sqrt {\frac {2\pi }{\kappa U_\infty }}\p {U_\infty...
-l.505 ...p{U_\infty-\frac{\Gamma^2}{4\pi\kappa}}}}
+l.510 ...p{U_\infty-\frac{\Gamma^2}{4\pi\kappa}}}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -987,45 +996,54 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--517
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
 
  []
 
 
-./Examen Programmeren Verwerking.tex:535: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:540: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.535       \end{align}
+l.540       \end{align}
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Examen Programmeren Verwerking.tex:555: Package amsmath Error: Erroneous nesting of equation structures;
+./Examen Programmeren Verwerking.tex:560: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.555       \end{align}
+l.560       \end{align}
                        
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 557.
+(babel)             in language  on input line 562.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 557.
+(babel)             in language  on input line 562.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 557.
+(babel)             in language  on input line 562.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 557.
+(babel)             in language  on input line 562.
 [21]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 574.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 574.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 574.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 574.
+ [22]
 Package epstopdf Info: Source file: <plots/probleem6_1.eps>
 (epstopdf)                    date: 2019-05-17 15:42:01
 (epstopdf)                    size: 108399 bytes
@@ -1033,12 +1051,12 @@ Package epstopdf Info: Source file: <plots/probleem6_1.eps>
 (epstopdf)                    date: 2019-05-19 12:02:19
 (epstopdf)                    size: 271822 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem6_1-eps-converted-to.pdf plots/probleem6_1.eps>
-(epstopdf)             \includegraphics on input line 569.
+(epstopdf)             \includegraphics on input line 578.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem6_1-eps-converted-to.pdf, id=358, 566.115pt x 316.18124pt>
+<plots/probleem6_1-eps-converted-to.pdf, id=363, 566.115pt x 316.18124pt>
 File: plots/probleem6_1-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem6_1-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem6_1-eps-converted-to.pdf  used on input line 569.
+Package pdftex.def Info: plots/probleem6_1-eps-converted-to.pdf  used on input line 578.
 (pdftex.def)             Requested size: 460.72124pt x 257.326pt.
 Package epstopdf Info: Source file: <plots/probleem6_2.eps>
 (epstopdf)                    date: 2019-05-17 15:42:22
@@ -1047,137 +1065,64 @@ Package epstopdf Info: Source file: <plots/probleem6_2.eps>
 (epstopdf)                    date: 2019-05-19 12:02:32
 (epstopdf)                    size: 534736 bytes
 (epstopdf)             Command: <repstopdf --outfile=plots/probleem6_2-eps-converted-to.pdf plots/probleem6_2.eps>
-(epstopdf)             \includegraphics on input line 575.
+(epstopdf)             \includegraphics on input line 584.
 Package epstopdf Info: Output file is already uptodate.
-<plots/probleem6_2-eps-converted-to.pdf, id=359, 565.11125pt x 316.18124pt>
+<plots/probleem6_2-eps-converted-to.pdf, id=364, 565.11125pt x 316.18124pt>
 File: plots/probleem6_2-eps-converted-to.pdf Graphic file (type pdf)
 <use plots/probleem6_2-eps-converted-to.pdf>
-Package pdftex.def Info: plots/probleem6_2-eps-converted-to.pdf  used on input line 575.
+Package pdftex.def Info: plots/probleem6_2-eps-converted-to.pdf  used on input line 584.
 (pdftex.def)             Requested size: 460.72124pt x 257.77951pt.
-
-
-LaTeX Warning: File `plots/probleem6_3.eps' not found on input line 580.
-
-Package epstopdf Info: Source file: <plots/probleem6_3.eps>
-(epstopdf)             Output file: <plots/probleem6_3-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=plots/probleem6_3-eps-converted-to.pdf plots/probleem6_3.eps>
-(epstopdf)             \includegraphics on input line 580.
-Package epstopdf Info: Output file is already uptodate.
-
-./Examen Programmeren Verwerking.tex:580: Package pdftex.def Error: File `plots/probleem6_3-eps-converted-to.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.580 ...idth = \textwidth]{plots/probleem6_3.eps}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `plots/probleem6_4.eps' not found on input line 585.
-
-Package epstopdf Info: Source file: <plots/probleem6_4.eps>
-(epstopdf)             Output file: <plots/probleem6_4-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=plots/probleem6_4-eps-converted-to.pdf plots/probleem6_4.eps>
-(epstopdf)             \includegraphics on input line 585.
-Package epstopdf Info: Output file is already uptodate.
-
-./Examen Programmeren Verwerking.tex:585: Package pdftex.def Error: File `plots/probleem6_4-eps-converted-to.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.585 ...idth = \textwidth]{plots/probleem6_4.eps}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 591.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 591.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 591.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
-[22 <./plots/probleem6_1-eps-converted-to.pdf>]
+(babel)             in language  on input line 591.
+ [23 <./plots/probleem6_1-eps-converted-to.pdf> <./plots/probleem6_2-eps-converted-to.pdf>]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 592.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 597.
+ (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 597.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 613.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 613.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
- [23 <./plots/probleem6_2-eps-converted-to.pdf>]
+(babel)             in language  on input line 613.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 613.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
+(babel)             in language  on input line 613.
  [24]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 589.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 589.
- [25]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 593.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 593.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 595.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 595.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 595.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 595.
- [26
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 601.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 601.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 601.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 601.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 601.
- [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 601.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 613.
  (./Examen Programmeren Verwerking.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 601.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 601.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 613.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 613.
 Package rerunfilecheck Info: File `"Examen Programmeren Verwerking".out' has not changed.
 (rerunfilecheck)             Checksum: 29806B6CA245DDBE11B93D136DE44118;672.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 601.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 613.
  ) 
 Here is how much of TeX's memory you used:
- 8339 strings out of 492642
- 125065 string characters out of 6133162
- 325602 words of memory out of 5000000
- 11983 multiletter control sequences out of 15000+600000
+ 8348 strings out of 492642
+ 125258 string characters out of 6133162
+ 326356 words of memory out of 5000000
+ 11995 multiletter control sequences out of 15000+600000
  20987 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,39p,769b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2018/texmf-dist/fo
 nts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "Examen Programmeren Verwerking.pdf" (27 pages, 5992965 bytes).
+Output written on "Examen Programmeren Verwerking.pdf" (24 pages, 5994530 bytes).
 PDF statistics:
- 496 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
  163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -52,7 +52,12 @@
 \newpage
 \section{Inleiding}
   \noindent
-  ...
+  In deze opdracht zullen we trachten om met behulp van \texttt{C++} het gedrag van onsamendrukbare, niet-visceuze flu\"ida te modelleren en simuleren. Hiervoor zullen we gebruik maken van een abstracte klasse ``\texttt{BaseFlow}'' waarvan we de objecten zullen afleiden. Pointers naar deze objecten (zoals source, doublet, vortex, ...) zullen dan opgeslagen worden in een vector in de klasse ``\texttt{Grid}'' waarover dan gelooped wordt en de resultaten van alle individuele oplossingen opgeteld worden zoals toegelaten door het superpositiebeginsel van de hydrodynamica.\\
+
+  \noindent
+  We zullen dan ook alle data wegschrijven naar \texttt{.txt}-bestanden binnen de co\"ordinaten en stappen zoals meegegeven aan de constructor van ``\texttt{Grid}''.\\
+
+  \paragraph{Opmerking:} De objecten die we aanmaken moeten niet per se binnen de grenzen van het ``\texttt{Grid}'' liggen, we kunenn zo ook de invloed van objecten die op grote afstand staan beschouwen.
 
 \newpage
 \section{Problemen}
@@ -541,11 +546,11 @@
 
     \begin{align*}
       C_p\p{r = R,\theta} &= 1-\frac{v_{totaal,r}^2+v_{totaal,\theta}^2}{U_\infty^2} \\
-      &= ...
+      &= 1
     \end{align*}
 
     \noindent
-    ////UITLEG
+    We zien dus dat de drukco\"effici\"ent dus onafhankelijk is van de hoek op $r=R$ en overal constant. Dan kunnen we hetzelfde doen met een vortex toegevoegd.:
 
     \begin{equation*}
       \left\{
@@ -560,39 +565,46 @@
     Zodat:
 
     \begin{align*}
-      C_p\p{r = R,\theta} &= ...
+      C_p\p{r = R,\theta} &= 1-\frac{v_{totaal,r}^2+v_{totaal,\theta}^2}{U_\infty^2} \\
+      &= 1-\frac{\Gamma^2}{2\pi\kappa U_\infty}-\frac{\Gamma\p{\sin\theta-U_\infty}}{\sqrt{2\pi\kappa U_\infty^3}}
     \end{align*}
 
+    \noindent
+    Waarin we dus direct zien dat de drukco\"effici\"ent groter is onderaan dan bovenaan; we genereren lift! Deze combinatie van een vortex, met doublet in een uniformse stroom is dus een goede simulatie van een roterend object in de wind, waarop het Magnus effect werkt.
+\newpage
     \FloatBarrier
     \begin{figure}[ht!]
       \centering
-      \includegraphics[width = \textwidth]{plots/probleem6_1.eps}
+      \includegraphics[width = \textwidth]{plots/probleem6_1.eps}\vspace{-0.5cm}
       \caption{Snelheidsvectoren en stroomlijnen voor een systeem met vortex en doublet in de oorspronk in een uniforme stroom.}
       \label{probleem6_1}
     \end{figure}
     \begin{figure}[ht!]
       \centering
-      \includegraphics[width = \textwidth]{plots/probleem6_2.eps}
+      \includegraphics[width = \textwidth]{plots/probleem6_2.eps}\vspace{-0.5cm}
       \caption{Snelheidsvectoren en stroomlijnen voor een systeem als in figuur \ref{probleem6_1}, maar dat niet voldoet aan het criterium.}
       \label{probleem6_2}
-    \end{figure}
-    \begin{figure}[ht!]
-      \includegraphics[width = \textwidth]{plots/probleem6_3.eps}
-      \caption{Drukco\"effici\"ent in functie van de polaire hoek voor een doublet in uniforme stroom.}
-      \label{probleem6_3}
-    \end{figure}
-    \begin{figure}[ht!]
-      \includegraphics[width = \textwidth]{plots/probleem6_4.eps}
-      \caption{Drukco\"effic\"ent in functie van de polaire hoek voor een doublet en vortex in uniforme stroom.}
-      \label{probleem6_4}
     \end{figure}
     \FloatBarrier
 
 
-
-\section{Conclusie}
-
 \newpage
+\section{Conclusie}
+  \noindent
+  In deze examenopdracht hebben we \texttt{C++} code geschreven waarmee we volgende objecten mee kunnen simuleren:
+
+  \begin{itemize}
+    \item Source/sink
+    \item Uniforme stroom
+    \item Vortex
+    \item Vortexsheet
+    \item Source-sink doublet
+  \end{itemize}
+
+  \noindent
+  En alle combinaties daarvan. Zo kunnen we met behulp van superpositie stromen, potentialen, etc. onderzoeken voor onsamendrukbare en niet-visceuze flu\"ida waarvoor we veronderstellen dat alle stroming laminair is. Deze simulaties gemaakt in \texttt{C++} kunnen dan ook eenvoudig gevisualiseerd worden in andere software paketten zoals Matlab, waarvoor de data eenvoudig te importeren is vanuit een \texttt{.txt}-bestand.
+
+
 \begin{thebibliography}{99}
   \bibitem{opdracht} N. van Remortel \& M. Verstraeten (2019). \textit{Examenopdracht Inleiding Programmeren: Numerieke benadering van aerodynamische problemen met behulp van potentiaalstromings theorie}, UAntwerpen.
   \bibitem{cursus} C. Beaume (ONGEKEND). \textit{Fundamentals of Fluid Mechanics}, Department of Aeronautics // Imperial College London.

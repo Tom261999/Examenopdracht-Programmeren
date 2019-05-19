@@ -175,12 +175,12 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT Examen Programmeren Verwerking.toc
 INPUT c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT plots/probleem1_1.eps
 INPUT ./plots/probleem1_1.eps
 INPUT ./plots/probleem1_1.eps
@@ -348,6 +348,8 @@ INPUT ./plots/probleem6_2.eps
 INPUT ./plots/probleem6_2-eps-converted-to.pdf
 INPUT ./plots/probleem6_2-eps-converted-to.pdf
 INPUT ./plots/probleem6_2-eps-converted-to.pdf
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT Examen Programmeren Verwerking.aux
 INPUT ./Examen Programmeren Verwerking.out
