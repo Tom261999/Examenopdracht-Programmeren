@@ -57,7 +57,7 @@
   \noindent
   We zullen dan ook alle data wegschrijven naar \texttt{.txt}-bestanden binnen de co\"ordinaten en stappen zoals meegegeven aan de constructor van ``\texttt{Grid}''.\\
 
-  \paragraph{Opmerking:} De objecten die we aanmaken moeten niet per se binnen de grenzen van het ``\texttt{Grid}'' liggen, we kunenn zo ook de invloed van objecten die op grote afstand staan beschouwen. 
+  \paragraph{Opmerking:} De objecten die we aanmaken moeten niet per se binnen de grenzen van het ``\texttt{Grid}'' liggen, we kunenn zo ook de invloed van objecten die op grote afstand staan beschouwen.
 
   \paragraph{Opmerking:} In de opdrachten wordt er gevraagd de stroomlijnen te plotten in combinatie met de snelheidsvectoren. Echter liggen deze altijd parallel met elkaar en kan Matlab de stroomlijnen construeren vanuit de snelheidsvectoren alleen. Om de plots niet onnodig ingewikkeld te maken zullen we gewoon het Matlab-commando \texttt{streamslice} gebruiken om de snelheidsvectoren en stroomlijnen te visualiseren.
 
@@ -544,15 +544,15 @@
     \end{equation*}
 
     \noindent
-    Dan is de drukco\"effici\"ent gegeven door:
+    Dan is de drukco\"effici\"ent gegeven door:\footnote{Dit is exact hetzelfde als wat behandeld werd in probleem 4.}
 
     \begin{align*}
       C_p\p{r = R,\theta} &= 1-\frac{v_{totaal,r}^2+v_{totaal,\theta}^2}{U_\infty^2} \\
-      &= 1
+      &= 1-4\sin^2\theta
     \end{align*}
 
     \noindent
-    We zien dus dat de drukco\"effici\"ent dus onafhankelijk is van de hoek op $r=R$ en overal constant. Dan kunnen we hetzelfde doen met een vortex toegevoegd.:
+    We zien dus dat de drukco\"effici\"ent boven en onder het doublet gelijk is, er wordt dus geen lift gegenereerd. Dan kunnen we hetzelfde doen met een vortex toegevoegd.:
 
     \begin{equation*}
       \left\{
